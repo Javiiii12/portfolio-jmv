@@ -1,59 +1,36 @@
-# PortfolioJmv
+# Portfolio Profesional - Especialista en Ciberseguridad & Full Stack 🛡️ Secure by Design
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+Bienvenido a mi portfolio profesional. Este proyecto refleja mi doble perfil combinando una arquitectura de software robusta con principios de seguridad ofensiva y defensiva.
 
-## Development server
+## 🚀 Stack Tecnológico
 
-To start a local development server, run:
+Desarrollado con tecnologías de vanguardia enfocadas en el rendimiento absoluto:
 
-```bash
-ng serve
-```
+- **Angular 20**: Uso de las últimas características del framework.
+- **Signals**: Reactividad moderna sin dependencias externas.
+- **Arquitectura Zoneless**: Ejecución sin `zone.js` para un rendimiento extremo.
+- **Tailwind CSS**: Diseño minimalista, oscuro (Dark Mode), con un toque estético de terminal hacker.
+- **TypeScript**: Tipado estricto para garantizar la máxima fiabilidad en la fase de desarrollo.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 💾 Arquitectura de Datos
 
-## Code scaffolding
+Este proyecto es una **Single Page Application (SPA) 100% estática**. 
+No existe un backend tradicional que pueda ser comprometido. Toda la capa de datos (perfil, experiencia, certificaciones) se simula de forma profesional consumiendo archivos estáticos `.json` desde la carpeta `/public` utilizando los servicios HttpClient reactivos de Angular. Esto lo hace ideal para despliegues ultrarrápidos en entornos endurecidos como GitHub Pages.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛡️ Seguridad
 
-```bash
-ng generate component component-name
-```
+Fiel a mi perfil, el código frontend se concibe bajo el principio *Secure by Design*:
+- **Sanitización estricta**: Uso de los mecanismos internos de Angular (`DomSanitizer`) y renderizado seguro mediante Control Flow (`@if`, `@for`) para mitigar activamente riesgos de Cross-Site Scripting (XSS).
+- **Listo para CSP**: La naturaleza estática del proyecto y la eliminación del código inline prepara el terreno para la implementación de políticas de Content Security Policy (CSP) muy restrictivas.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📜 Certificaciones
 
-```bash
-ng generate --help
-```
+Este portfolio documenta mis logros y acreditaciones en Ciberseguridad y Hacking Ético, entre las que destacan:
+- **OSWE** (Offensive Security Web Expert)
+- **OSWP** (Offensive Security Wireless Professional)
+- **eCCPT** (Certified Professional Pentester)
+- **eWPT** (Web App Penetration Tester)
+- **eJPT** (Junior Penetration Tester)
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+*Diseñado y codificado con pasión por la ciberseguridad y el desarrollo eficiente.*
