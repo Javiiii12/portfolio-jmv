@@ -9,21 +9,21 @@
     },
     "habilidades_destacadas": {
         "ciberseguridad_y_hacking": [
-            "Auditoría de redes y sistemas.",
-            "Análisis de vulnerabilidades en aplicaciones web.",
-            "Gestión de copias de seguridad y aseguramiento de la infraestructura informática.",
-            "Instalación, configuración y administración de sistemas operativos (principalmente Linux)."
+            "Auditoría de redes y sistemas con dominio en Nmap y Wireshark.",
+            "Análisis de vulnerabilidades web (OWASP Top 10) usando Burp Suite Pro.",
+            "Explotación y Post-Explotación con Metasploit Framework.",
+            "Elaboración de scripts de automatización en Python y Bash."
         ],
         "diseno_y_desarrollo_web": [
-            "Creación de interfaces responsivas y optimizadas con HTML, CSS y JavaScript.",
-            "Conocimientos en frameworks modernos (Angular) para el desarrollo de aplicaciones web.",
-            "Integración de principios de UX/UI para mejorar la experiencia del usuario.",
-            "Optimización para SEO y mejores prácticas de accesibilidad."
+            "Arquitectura Full Stack con Angular y TypeScript.",
+            "Creación de interfaces responsivas y UI avanzadas con Tailwind CSS.",
+            "Integración de principios de UX/UI para interfaces seguras.",
+            "Optimización para SEO y mejores prácticas orientadas a rendimiento."
         ],
         "otros_conocimientos": [
-            "Dominio y gestión de bases de datos (MySQL, MariaDB).",
-            "Programación básica en múltiples lenguajes (Java, PHP, Python).",
-            "Mantenimiento y soporte de hardware.",
+            "Hardening de sistemas y administración de servidores Linux.",
+            "Dominio y gestión de bases de datos relacionales (MySQL/MariaDB) y prevención de Inyecciones SQL con SQLMap.",
+            "Despliegue de infraestructuras IT.",
             "Control de versiones (Git)."
         ]
     },
@@ -32,19 +32,19 @@
             "id": "OSWE",
             "nombre": "Offensive Security Web Expert",
             "emisor": "OffSec",
-            "detalles": "Auditoría intensiva de código fuente (White-box). Explotación de vulnerabilidades lógicas complejas, bypass de autenticación y ejecución remota de código (RCE) encadenando múltiples fallos web."
+            "detalles": "Especialización avanzada en la explotación de vulnerabilidades web (White-box). Explotación de fallos lógicos complejos, bypass de autenticación y ejecución remota de código (RCE)."
         },
         {
             "id": "OSWP",
             "nombre": "Offensive Security Wireless Professional",
             "emisor": "OffSec",
-            "detalles": "Auditorías de seguridad en redes Inalámbricas. Explotación de protocolos WEP, WPA/WPA2 (Personal y Enterprise) utilizando ataques de diccionario y Evil Twin."
+            "detalles": "Especialización crítica en auditorías de seguridad en redes Inalámbricas y explotación de protocolos WEP/WPA2."
         },
         {
             "id": "eCCPT",
             "nombre": "Certified Professional Pentester",
             "emisor": "eLearnSecurity",
-            "detalles": "Simulación real de Pentesting corporativo con pivoteo de redes, Post-Explotación, evasión de antivirus (AV evasion) y desarrollo de exploits basados en desbordamiento de búfer (Buffer Overflow)."
+            "detalles": "Simulación real de Pentesting corporativo con pivoteo de redes, Post-Explotación y desarrollo de exploits basados en desbordamiento de búfer (Buffer Overflow)."
         },
         {
             "id": "eWPT",
@@ -61,44 +61,53 @@
     ],
     "formacion": [
         {
-            "titulacion": "Técnico en Administración de Sistemas Informáticos en Red (ASIR)",
-            "institucion": "I.E.S. Leonardo Da Vinci",
-            "fecha": "oct. 2025 – dic. 2028",
-            "estado": "Cursando",
-            "descripcion": "Especialización en administración de sistemas, redes y despliegue de infraestructuras seguras."
-        },
-        {
             "titulacion": "Full Stack Developer (Especialización Backend)",
             "institucion": "UNIR - Universidad Internacional de La Rioja",
             "fecha": "abr. 2025 – dic. 2025",
             "estado": "Completado",
-            "descripcion": "Arquitectura Full Stack, desarrollo frontend (Angular, HTML5, CSS3), lógica y scripting (Python, JS), gestión de datos y control de versiones con Git."
+            "descripcion": "Máster Full Stack Developer. Arquitectura Full Stack, desarrollo frontend (Angular), lógica y scripting (Python, JS), y gestión de bases de datos."
         },
         {
             "titulacion": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
             "institucion": "I.E.S. Leonardo Da Vinci",
             "fecha": "sept. 2023 – dic. 2025",
             "estado": "Completado",
-            "descripcion": "Programación en Java, PHP, JS. Diseño de bases de datos (MySQL/MariaDB). Desarrollo de interfaces modernas con Bootstrap y Tailwind CSS."
+            "descripcion": "Programación integral web. Diseño de bases de datos relacionales y desarrollo de interfaces modernas de usuario y herramientas."
         },
         {
             "titulacion": "Certificado de Profesionalidad Nivel 3 en Seguridad Informática",
             "institucion": "Escuela de Negocios FEDA",
             "fecha": "sept. 2022 – feb. 2023",
             "estado": "APTO",
-            "descripcion": "Configuración de sistemas seguros, gestión de incidentes, auditoría de seguridad, criptografía y aplicación de normativas como el RGPD."
+            "descripcion": "Configuración de sistemas seguros, gestión de incidentes, auditoría de seguridad, criptografía y aplicación de normativas."
+        },
+        {
+            "titulacion": "Técnico en Administración de Sistemas Informáticos en Red (ASIR)",
+            "institucion": "I.E.S. Leonardo Da Vinci",
+            "fecha": "oct. 2025 – dic. 2028",
+            "estado": "Cursando",
+            "descripcion": "Especialización en administración de sistemas, redes y despliegue de infraestructuras seguras."
         }
     ],
     "experiencia": [
+        {
+            "puesto": "Auditor de Seguridad Junior",
+            "empresa": "Hardlink",
+            "fecha": "feb. 2023 – abr. 2023",
+            "hitos": [
+                "Auditoría técnica de vulnerabilidades web e infraestructura.",
+                "Redacción de reportes ejecutivos para el equipo de desarrollo.",
+                "Explotación controlada y apoyo en el hardening de los servidores de validación."
+            ]
+        },
         {
             "puesto": "Administrador Web & Responsable de Seguridad TI",
             "empresa": "Armería Caza y Pesca Játiva",
             "fecha": "abr. 2022 – abr. 2023",
             "hitos": [
-                "Administración integral y hardening del CMS corporativo, reduciendo la superficie de ataque.",
+                "Administración integral y hardening sistemático del CMS corporativo.",
                 "Gestión de identidad y accesos (IAM), configurando roles y privilegios mínimos.",
-                "Monitorización 24/7 de la disponibilidad del servicio y respuesta ante incidentes.",
-                "Implementación de políticas de copias de seguridad y securización de hosting."
+                "Monitorización 24/7 de la arquitectura y despliegue de políticas de copias de seguridad."
             ]
         }
     ],
