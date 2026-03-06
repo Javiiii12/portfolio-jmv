@@ -13,7 +13,8 @@
 
 body {
     position: relative;
-    @apply bg-slate-950 text-slate-300 font-mono overflow-x-hidden;
+    background-color: #020617 !important;
+    @apply text-slate-300 font-mono overflow-x-hidden;
 }
 
 /* Scanline Animation */
