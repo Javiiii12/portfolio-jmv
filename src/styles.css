@@ -14,7 +14,41 @@
 body {
     position: relative;
     background-color: #020617 !important;
-    @apply text-slate-300 font-mono overflow-x-hidden;
+    @apply text-slate-300 font-mono overflow-x-hidden transition-colors duration-300;
+}
+
+body.light {
+    background-color: #f8fafc !important;
+    /* slate-50 */
+    @apply text-slate-800;
+}
+
+body.light .bg-grid-pattern {
+    background-image:
+        linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px);
+}
+
+body.light .scanline::before {
+    background: rgba(15, 23, 42, 0.02);
+}
+
+/* Base borders adjustments for light mode */
+body.light * {
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+body.light .text-slate-500 {
+    color: #475569;
+}
+
+body.light .text-slate-400 {
+    color: #334155;
+}
+
+body.light .bg-black,
+body.light .bg-black\/50 {
+    background-color: #ffffff;
 }
 
 /* Scanline Animation */
