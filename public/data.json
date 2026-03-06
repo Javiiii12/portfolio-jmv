@@ -1,0 +1,100 @@
+{
+    "perfil": {
+        "nombre": "Javier Martínez Valiente",
+        "titular": "Especialista en Ciberseguridad & Full Stack Developer",
+        "ubicacion": "Albacete, España",
+        "email": "Javier_martinez92@hotmail.com",
+        "telefono": "678 03 59 93",
+        "bio": "Profesional de la Ciberseguridad enfocado en el hacking ético, respaldado por certificaciones reconocidas como eJPT, eWPT, eCCPT, OSWP y OSWE. Actualmente, estoy finalizando mi ciclo formativo en desarrollo web, lo que me permite combinar de manera integral mis conocimientos en ciberseguridad con las mejores prácticas en diseño y desarrollo de aplicaciones web.\n\nEn esta etapa, me he especializado en el análisis y la mitigación de vulnerabilidades en entornos web, mientras adquiero conocimientos en la creación de interfaces intuitivas, responsivas y optimizadas tanto para el usuario como para los motores de búsqueda. Mi experiencia en la plataforma Hack The Box y en los laboratorios de PortSwigger me ha permitido evolucionar y perfeccionar mis habilidades, adaptándome a los retos actuales del sector.\n\nMi pasión y dedicación por la ciberseguridad, combinadas con mi creciente experiencia en desarrollo web, me impulsan a seguir aprendiendo y contribuyendo a la creación de entornos digitales seguros, innovadores y eficientes."
+    },
+    "habilidades_destacadas": {
+        "ciberseguridad_y_hacking": [
+            "Auditoría de redes y sistemas.",
+            "Análisis de vulnerabilidades en aplicaciones web.",
+            "Gestión de copias de seguridad y aseguramiento de la infraestructura informática.",
+            "Instalación, configuración y administración de sistemas operativos (principalmente Linux)."
+        ],
+        "diseno_y_desarrollo_web": [
+            "Creación de interfaces responsivas y optimizadas con HTML, CSS y JavaScript.",
+            "Conocimientos en frameworks modernos (Angular) para el desarrollo de aplicaciones web.",
+            "Integración de principios de UX/UI para mejorar la experiencia del usuario.",
+            "Optimización para SEO y mejores prácticas de accesibilidad."
+        ],
+        "otros_conocimientos": [
+            "Dominio y gestión de bases de datos (MySQL, MariaDB).",
+            "Programación básica en múltiples lenguajes (Java, PHP, Python).",
+            "Mantenimiento y soporte de hardware.",
+            "Control de versiones (Git)."
+        ]
+    },
+    "certificaciones": [
+        {
+            "id": "OSWE",
+            "nombre": "Offensive Security Web Expert",
+            "emisor": "OffSec"
+        },
+        {
+            "id": "OSWP",
+            "nombre": "Offensive Security Wireless Professional",
+            "emisor": "OffSec"
+        },
+        {
+            "id": "eCCPT",
+            "nombre": "Certified Professional Pentester",
+            "emisor": "eLearnSecurity"
+        },
+        {
+            "id": "eWPT",
+            "nombre": "Web App Penetration Tester",
+            "emisor": "eLearnSecurity"
+        },
+        {
+            "id": "eJPT",
+            "nombre": "Junior Penetration Tester",
+            "emisor": "eLearnSecurity"
+        }
+    ],
+    "formacion": [
+        {
+            "titulacion": "Técnico en Administración de Sistemas Informáticos en Red (ASIR)",
+            "institucion": "I.E.S. Leonardo Da Vinci",
+            "fecha": "oct. 2025 – dic. 2028",
+            "estado": "Cursando",
+            "descripcion": "Especialización en administración de sistemas, redes y despliegue de infraestructuras seguras."
+        },
+        {
+            "titulacion": "Full Stack Developer (Especialización Backend)",
+            "institucion": "UNIR - Universidad Internacional de La Rioja",
+            "fecha": "abr. 2025 – dic. 2025",
+            "estado": "Completado",
+            "descripcion": "Arquitectura Full Stack, desarrollo frontend (Angular, HTML5, CSS3), lógica y scripting (Python, JS), gestión de datos y control de versiones con Git."
+        },
+        {
+            "titulacion": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
+            "institucion": "I.E.S. Leonardo Da Vinci",
+            "fecha": "sept. 2023 – dic. 2025",
+            "estado": "Completado",
+            "descripcion": "Programación en Java, PHP, JS. Diseño de bases de datos (MySQL/MariaDB). Desarrollo de interfaces modernas con Bootstrap y Tailwind CSS."
+        },
+        {
+            "titulacion": "Certificado de Profesionalidad Nivel 3 en Seguridad Informática",
+            "institucion": "Escuela de Negocios FEDA",
+            "fecha": "sept. 2022 – feb. 2023",
+            "estado": "APTO",
+            "descripcion": "Configuración de sistemas seguros, gestión de incidentes, auditoría de seguridad, criptografía y aplicación de normativas como el RGPD."
+        }
+    ],
+    "experiencia": [
+        {
+            "puesto": "Administrador Web & Responsable de Seguridad TI",
+            "empresa": "Armería Caza y Pesca Játiva",
+            "fecha": "abr. 2022 – abr. 2023",
+            "hitos": [
+                "Administración integral y hardening del CMS corporativo, reduciendo la superficie de ataque.",
+                "Gestión de identidad y accesos (IAM), configurando roles y privilegios mínimos.",
+                "Monitorización 24/7 de la disponibilidad del servicio y respuesta ante incidentes.",
+                "Implementación de políticas de copias de seguridad y securización de hosting."
+            ]
+        }
+    ]
+}
