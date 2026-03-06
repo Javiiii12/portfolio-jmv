@@ -31,27 +31,32 @@
         {
             "id": "OSWE",
             "nombre": "Offensive Security Web Expert",
-            "emisor": "OffSec"
+            "emisor": "OffSec",
+            "detalles": "Auditoría intensiva de código fuente (White-box). Explotación de vulnerabilidades lógicas complejas, bypass de autenticación y ejecución remota de código (RCE) encadenando múltiples fallos web."
         },
         {
             "id": "OSWP",
             "nombre": "Offensive Security Wireless Professional",
-            "emisor": "OffSec"
+            "emisor": "OffSec",
+            "detalles": "Auditorías de seguridad en redes Inalámbricas. Explotación de protocolos WEP, WPA/WPA2 (Personal y Enterprise) utilizando ataques de diccionario y Evil Twin."
         },
         {
             "id": "eCCPT",
             "nombre": "Certified Professional Pentester",
-            "emisor": "eLearnSecurity"
+            "emisor": "eLearnSecurity",
+            "detalles": "Simulación real de Pentesting corporativo con pivoteo de redes, Post-Explotación, evasión de antivirus (AV evasion) y desarrollo de exploits basados en desbordamiento de búfer (Buffer Overflow)."
         },
         {
             "id": "eWPT",
             "nombre": "Web App Penetration Tester",
-            "emisor": "eLearnSecurity"
+            "emisor": "eLearnSecurity",
+            "detalles": "Análisis exhaustivo de aplicaciones web, descubrimiento y explotación manual de vulnerabilidades OWASP Top 10, y redacción de informes técnicos profesionales."
         },
         {
             "id": "eJPT",
             "nombre": "Junior Penetration Tester",
-            "emisor": "eLearnSecurity"
+            "emisor": "eLearnSecurity",
+            "detalles": "Certificación práctica focalizada en metodologías de Pentesting, uso de herramientas básicas de red y explotación iterativa bajo Black-box."
         }
     ],
     "formacion": [
