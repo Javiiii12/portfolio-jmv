@@ -1,39 +1,36 @@
 @if (portfolioService.portfolioData(); as data) {
 <section
-  class="min-h-[90vh] flex flex-col items-center justify-center px-6 py-20 text-center selection:bg-cyan-900 selection:text-cyan-100 border-b border-slate-800">
+  class="min-h-[90vh] flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 px-6 py-20 text-center md:text-left selection:bg-cyan-900 selection:text-cyan-100 border-b border-slate-800">
 
-  <!-- Contenedor Imagen de Perfil (Cuadrado, sin glow) -->
-  <div class="relative w-40 h-40 md:w-52 md:h-52 mb-8 group overflow-hidden border border-slate-600">
-    <!-- Contenedor Imagen de Perfil -->
-    <div class="relative group flex-shrink-0 animate-[pulse_4s_ease-in-out_infinite]">
-      <img src="perfil.jpg" alt="Foto de {{ data.perfil.nombre }}"
-        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzhkZWE2IiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDhhMyAzIDAgMTAwIDYgMyAzIDAgMDAwLTZ6TTUgMTZjMS41LTIgMy0zIDctMyA0IDAgNS41IDEgNyAzIi8+PC9zdmc+'"
-        class="w-32 h-32 md:w-44 md:h-44 rounded-full border-2 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.4)] object-cover bg-black" />
-    </div>
+  <!-- Contenedor Imagen de Perfil -->
+  <div class="relative group flex-shrink-0 animate-[pulse_4s_ease-in-out_infinite]">
+    <img src="perfil.jpg" alt="Foto de {{ data.perfil.nombre }}"
+      onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzhkZWE2IiBzdHJva2Utd2lkdGg9IjIiPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEwIi8+PHBhdGggZD0iTTEyIDhhMyAzIDAgMTAwIDYgMyAzIDAgMDAwLTZ6TTUgMTZjMS41LTIgMy0zIDctMyA0IDAgNS41IDEgNyAzIi8+PC9zdmc+'"
+      class="w-32 h-32 md:w-44 md:h-44 rounded-full border-2 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.4)] object-cover bg-black" />
+  </div>
 
-    <!-- Contenedor Texto -->
-    <div class="flex flex-col items-center md:items-start max-w-2xl">
-      <!-- Nombre -->
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-green-500">
-        {{ data.perfil.nombre }}
-      </h1>
-    </div>
+  <!-- Contenedor Texto -->
+  <div class="flex flex-col items-center md:items-start max-w-2xl">
+    <!-- Nombre -->
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-green-500">
+      {{ data.perfil.nombre }}
+    </h1>
 
     <!-- Titular (Estilo Terminal) -->
     <h2
-      class="text-xl md:text-2xl text-cyan-400 mb-8 max-w-2xl px-4 py-2 border border-slate-800 uppercase tracking-widest bg-black/50">
-      <span class="text-slate-500">root@kali:~#</span> {{ data.perfil.titular }}<span
+      class="text-xl md:text-2xl text-cyan-400 mb-8 px-4 py-2 border border-slate-800 uppercase tracking-widest bg-black/50">
+      <span class="text-slate-500">root@kali:~#</span> <span id="hero-titular">{{ data.perfil.titular }}</span><span
         class="animate-pulse text-cyan-400">_</span>
     </h2>
 
     <!-- Biografía -->
     <p
-      class="text-base md:text-lg text-slate-400 max-w-3xl whitespace-pre-line leading-relaxed text-left border-l-2 border-slate-800 pl-4">
+      class="text-base md:text-lg text-slate-400 whitespace-pre-line leading-relaxed text-left border-l-2 border-slate-800 pl-4 w-full">
       > {{ data.perfil.bio }}
     </p>
 
     <!-- Datos de Contacto Extra -->
-    <div class="mt-10 flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+    <div class="mt-10 flex flex-wrap justify-center md:justify-start gap-6 text-sm text-slate-500">
       <span class="flex items-center gap-2 px-3 py-1 border border-slate-800">
         > LOC: {{ data.perfil.ubicacion }}
       </span>
@@ -42,6 +39,7 @@
         > MSG: {{ data.perfil.email }}
       </span>
     </div>
+  </div>
 
 </section>
 } @else {
