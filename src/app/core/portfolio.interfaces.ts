@@ -17,6 +17,7 @@ export interface ICertificacion {
     id: string;
     nombre: string;
     emisor: string;
+    detalles?: string;
 }
 
 export interface IFormacion {
