@@ -1,17 +1,23 @@
-import { Injectable, inject, Signal } from '@angular/core';
+import { Injectable, inject, Signal, computed } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IPortfolioData } from './portfolio.interfaces';
+import { LanguageService } from './language.service';
 
 @Injectable({
     providedIn: 'root'
 })
 export class PortfolioService {
     private readonly http = inject(HttpClient);
+    private readonly langService = inject(LanguageService);
 
-    // En Angular 20 (Vite builder), el contenido de /public se sirve desde la raíz ('/data.json').
-    // Al usar Github Pages con subdirectorio, conviene poner la ruta relativa 'data.json' para que coja el base-href.
-    public readonly portfolioData: Signal<IPortfolioData | undefined> = toSignal(
+    private readonly rawData = toSignal(
         this.http.get<IPortfolioData>('data.json')
     );
+
+    public readonly portfolioData = computed(() => {
+        const data = this.rawData();
+        if (!data) return undefined;
+        return this.langService.translateData(data);
+    });
 }
