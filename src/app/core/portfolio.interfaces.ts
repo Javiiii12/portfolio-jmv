@@ -34,10 +34,19 @@ export interface IExperiencia {
     hitos: string[];
 }
 
+export interface IProyecto {
+    titulo: string;
+    descripcion: string;
+    categoria: string;
+    tecnologia: string;
+    enlace: string;
+}
+
 export interface IPortfolioData {
     perfil: IPerfil;
     habilidades_destacadas: IHabilidadesDestacadas;
     certificaciones: ICertificacion[];
     formacion: IFormacion[];
     experiencia: IExperiencia[];
+    proyectos: IProyecto[];
 }

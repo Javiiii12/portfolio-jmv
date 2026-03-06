@@ -96,5 +96,28 @@
                 "Implementación de políticas de copias de seguridad y securización de hosting."
             ]
         }
+    ],
+    "proyectos": [
+        {
+            "titulo": "E-commerce Seguro con Angular",
+            "descripcion": "Plataforma de comercio electrónico con arquitectura backend segura, prevención de inyecciones SQL y autenticación JWT.",
+            "categoria": "Desarrollo",
+            "tecnologia": "Angular",
+            "enlace": "#"
+        },
+        {
+            "titulo": "Pentesting de Máquina [Nombre] - HackTheBox",
+            "descripcion": "Explotación de vulnerabilidades web, escalada de privilegios y bypass de filtros en entorno controlado.",
+            "categoria": "Ciberseguridad",
+            "tecnologia": "Metasploit",
+            "enlace": "#"
+        },
+        {
+            "titulo": "Script de automatización en Python para análisis de puertos",
+            "descripcion": "Herramienta desarrollada para el análisis rápido de puertos y enumeración de servicios en redes corporativas.",
+            "categoria": "Ciberseguridad",
+            "tecnologia": "Python",
+            "enlace": "#"
+        }
     ]
 }

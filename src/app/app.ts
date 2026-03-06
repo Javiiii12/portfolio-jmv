@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeroComponent } from './features/hero/hero.component';
 import { SkillsCertsComponent } from './features/skills-certs/skills-certs.component';
 import { ExperienceEducationComponent } from './features/experience-education/experience-education.component';
+import { ProjectsGridComponent } from './features/projects-grid/projects-grid.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeroComponent, SkillsCertsComponent, ExperienceEducationComponent],
+  imports: [RouterOutlet, HeroComponent, SkillsCertsComponent, ProjectsGridComponent, ExperienceEducationComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
