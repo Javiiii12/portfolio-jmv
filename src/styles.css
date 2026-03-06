@@ -13,7 +13,7 @@
 
 body {
     position: relative;
-    @apply bg-black text-slate-300 font-mono;
+    @apply bg-slate-950 text-slate-300 font-mono overflow-x-hidden;
 }
 
 /* Scanline Animation */
