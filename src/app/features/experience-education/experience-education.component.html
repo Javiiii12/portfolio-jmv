@@ -1,36 +1,37 @@
 @if (portfolioService.portfolioData(); as data) {
-<section class="container mx-auto px-6 py-16">
+<section class="py-16 border-b border-slate-800">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
         <!--===============================================
           Columna 1: Experiencia Profesional
       ================================================-->
         <div>
-            <div class="border-l-4 border-green-500 pl-6 lg:pl-10 mb-8">
-                <h2 class="text-3xl font-bold text-white border-b border-gray-800 pb-4 typewriter inline-block">
-                    <span class="text-green-400">~/</span> Experiencia_Profesional
+            <div class="border-l-2 border-slate-800 pl-6 lg:pl-10 mb-8">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 typewriter inline-block uppercase tracking-widest">
+                    [ PROFESSIONAL_EXP ]
                 </h2>
             </div>
 
             <div>
                 @for (exp of data.experiencia; track exp.empresa) {
                 <div
-                    class="border-l-4 border-green-500 pl-6 ml-1 relative pb-8 last:pb-0 hover:border-cyan-400 transition-colors duration-300 group">
+                    class="border-l-2 border-slate-800 pl-6 ml-1 relative pb-8 last:pb-0 hover:border-green-500 transition-colors duration-300 group">
                     <span
-                        class="absolute -left-[10px] top-1.5 h-4 w-4 rounded-full bg-green-500 shadow-[0_0_10px_rgba(34,197,94,0.8)] group-hover:bg-cyan-400 group-hover:shadow-[0_0_10px_rgba(34,211,238,0.8)] transition-all"></span>
+                        class="absolute -left-[5px] top-1.5 h-2 w-2 rounded-none bg-black border border-green-500 group-hover:bg-green-500 transition-all"></span>
 
-                    <h3 class="text-xl text-green-400 font-bold group-hover:text-cyan-400 transition-colors">
+                    <h3 class="text-xl text-green-500 font-bold group-hover:text-cyan-400 transition-colors">
                         {{ exp.puesto }}
                     </h3>
 
-                    <div class="text-sm text-gray-400 font-mono mb-4">
+                    <div class="text-sm text-slate-500 font-mono mb-4 uppercase">
                         {{ exp.empresa }} | {{ exp.fecha }}
                     </div>
 
                     <ul>
                         @for (hito of exp.hitos; track $index) {
-                        <li class="text-gray-300 text-sm mb-2 list-disc list-inside">
-                            {{ hito }}
+                        <li class="text-slate-300 text-sm mb-2 flex items-start gap-2">
+                            <span class="text-green-500">></span> <span>{{ hito }}</span>
                         </li>
                         }
                     </ul>
@@ -45,33 +46,35 @@
       ================================================-->
         <div class="mt-12 lg:mt-0">
             <div
-                class="border-l-4 border-cyan-500 pl-6 lg:pl-10 mb-8 lg:border-l-0 lg:border-r-4 lg:pr-10 lg:pl-0 lg:text-right">
-                <h2 class="text-3xl font-bold text-white border-b border-gray-800 pb-4 typewriter inline-block">
-                    <span class="text-cyan-400">./</span> Formación_Académica
+                class="border-l-2 border-slate-800 pl-6 lg:pl-10 mb-8 lg:border-l-0 lg:border-r-2 lg:pr-10 lg:text-right">
+                <h2
+                    class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 typewriter inline-block uppercase tracking-widest">
+                    [ CORE_EDUCATION ]
                 </h2>
             </div>
 
             <div>
                 @for (form of data.formacion; track form.titulacion) {
                 <div
-                    class="border-l-4 border-cyan-500 pl-6 ml-1 relative pb-8 last:pb-0 hover:border-green-500 transition-colors duration-300 group lg:ml-0 lg:border-l-0 lg:border-r-4 lg:pr-6 lg:mr-1 lg:text-right">
+                    class="border-l-2 border-slate-800 pl-6 ml-1 relative pb-8 last:pb-0 hover:border-cyan-400 transition-colors duration-300 group lg:ml-0 lg:border-l-0 lg:border-r-2 lg:pr-6 lg:mr-1 lg:text-right">
                     <span
-                        class="absolute -left-[10px] lg:left-auto lg:-right-[10px] top-1.5 h-4 w-4 rounded-full bg-cyan-500 shadow-[0_0_10px_rgba(34,211,238,0.8)] group-hover:bg-green-500 group-hover:shadow-[0_0_10px_rgba(34,197,94,0.8)] transition-all"></span>
+                        class="absolute -left-[5px] lg:left-auto lg:-right-[5px] top-1.5 h-2 w-2 rounded-none bg-black border border-cyan-400 group-hover:bg-cyan-400 transition-all"></span>
 
-                    <h3 class="text-lg text-cyan-400 font-bold group-hover:text-green-400 transition-colors">
+                    <h3 class="text-lg text-cyan-400 font-bold group-hover:text-green-500 transition-colors">
                         {{ form.titulacion }}
                     </h3>
 
-                    <div class="text-sm text-gray-400 font-mono mb-2">
+                    <div class="text-sm text-slate-500 font-mono mb-2 uppercase">
                         {{ form.institucion }} | {{ form.fecha }}
                     </div>
 
-                    <span class="inline-block px-2 py-1 text-xs rounded bg-gray-800 text-gray-300 font-mono mt-1 mb-3">
-                        {{ form.estado }}
+                    <span
+                        class="inline-block px-2 py-1 text-xs border border-slate-700 bg-black text-slate-300 mt-1 mb-3 tracking-widest">
+                        [{{ form.estado }}]
                     </span>
 
-                    <p class="text-gray-400 text-sm mt-2 mb-8">
-                        {{ form.descripcion }}
+                    <p class="text-slate-400 text-sm mt-2 mb-8">
+                        > {{ form.descripcion }}
                     </p>
 
                 </div>

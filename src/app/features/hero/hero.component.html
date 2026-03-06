@@ -1,56 +1,49 @@
 @if (portfolioService.portfolioData(); as data) {
 <section
-  class="min-h-screen bg-gray-950 flex flex-col items-center justify-center px-6 py-20 text-center selection:bg-cyan-900 selection:text-cyan-100">
+  class="min-h-[90vh] flex flex-col items-center justify-center px-6 py-20 text-center selection:bg-cyan-900 selection:text-cyan-100 border-b border-slate-800">
 
-  <!-- Contenedor Imagen de Perfil -->
-  <div class="relative w-40 h-40 md:w-52 md:h-52 mb-8 group">
-    <!-- Efecto Glow (Aura Tecnológica) -->
-    <div
-      class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-full blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-500">
-    </div>
-
+  <!-- Contenedor Imagen de Perfil (Cuadrado, sin glow) -->
+  <div class="relative w-40 h-40 md:w-52 md:h-52 mb-8 group overflow-hidden border border-slate-600">
     <img src="profile.jpg" alt="Foto de {{ data.perfil.nombre }}"
-      class="relative w-full h-full object-cover rounded-full border-4 border-gray-950 shadow-2xl ring-2 ring-cyan-500/50" />
+      class="relative w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500" />
   </div>
 
   <!-- Nombre -->
-  <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4">
-    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
-      {{ data.perfil.nombre }}
-    </span>
+  <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-green-500">
+    {{ data.perfil.nombre }}
   </h1>
 
   <!-- Titular (Estilo Terminal) -->
   <h2
-    class="text-xl md:text-2xl font-mono text-cyan-400 mb-8 max-w-2xl px-4 py-2 bg-gray-900/50 rounded-md border border-gray-800 shadow-inner">
-    <span class="text-gray-500">root@kali:~#</span> {{ data.perfil.titular }}<span
+    class="text-xl md:text-2xl text-cyan-400 mb-8 max-w-2xl px-4 py-2 border border-slate-800 uppercase tracking-widest bg-black/50">
+    <span class="text-slate-500">root@kali:~#</span> {{ data.perfil.titular }}<span
       class="animate-pulse text-cyan-400">_</span>
   </h2>
 
   <!-- Biografía -->
   <p
-    class="text-base md:text-lg text-gray-400 max-w-3xl whitespace-pre-line leading-relaxed text-justify md:text-center">
-    {{ data.perfil.bio }}
+    class="text-base md:text-lg text-slate-400 max-w-3xl whitespace-pre-line leading-relaxed text-left border-l-2 border-slate-800 pl-4">
+    > {{ data.perfil.bio }}
   </p>
 
-  <!-- Datos de Contacto Extra (Opcional, minimalista) -->
-  <div class="mt-10 flex flex-wrap justify-center gap-6 text-sm font-mono text-gray-500">
-    <span class="flex items-center gap-2 shadow-sm px-3 py-1 bg-gray-900 rounded-full border border-gray-800">
-      📍 {{ data.perfil.ubicacion }}
+  <!-- Datos de Contacto Extra -->
+  <div class="mt-10 flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+    <span class="flex items-center gap-2 px-3 py-1 border border-slate-800">
+      > LOC: {{ data.perfil.ubicacion }}
     </span>
     <span
-      class="flex items-center gap-2 shadow-sm px-3 py-1 bg-gray-900 rounded-full border border-gray-800 hover:text-cyan-400 transition-colors">
-      ✉️ {{ data.perfil.email }}
+      class="flex items-center gap-2 px-3 py-1 border border-slate-800 hover:text-cyan-400 hover:border-cyan-400 transition-colors">
+      > MSG: {{ data.perfil.email }}
     </span>
   </div>
 
 </section>
 } @else {
 <!-- Estado de Carga / Esqueleto (Terminal de inicio) -->
-<section class="min-h-screen bg-gray-950 flex flex-col items-center justify-center font-mono text-green-500">
-  <div class="max-w-md w-full p-6 bg-gray-900 rounded shadow-2xl border border-gray-800">
+<section class="min-h-screen flex flex-col items-center justify-center text-green-500">
+  <div class="max-w-md w-full p-6 border border-slate-800 bg-black">
     <p>> Iniciando entorno seguro...</p>
-    <p>> Cargando módulos de ciberseguridad...</p>
+    <p>> Cargando módulos operacionales...</p>
     <p>> Obteniendo payload de datos<span class="animate-[ping_1.5s_infinite]">.</span><span
         class="animate-[ping_2s_infinite]">.</span><span class="animate-[ping_2.5s_infinite]">.</span></p>
   </div>
