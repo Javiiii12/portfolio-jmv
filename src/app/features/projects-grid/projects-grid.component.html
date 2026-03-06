@@ -40,9 +40,8 @@
                     {{ project.titulo }}
                 </h3>
 
-                <p class="text-gray-400 text-sm leading-relaxed mb-6">
-                    {{ project.descripcion }}
-                </p>
+                <p class="font-mono text-green-500/80 text-sm leading-relaxed mb-6"
+                    [innerHTML]="sanitizeHtml(project.descripcion)"></p>
             </div>
 
             <div class="mt-auto border-t border-gray-800 pt-4">

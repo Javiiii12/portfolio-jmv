@@ -4,10 +4,11 @@ import { HeroComponent } from './features/hero/hero.component';
 import { SkillsCertsComponent } from './features/skills-certs/skills-certs.component';
 import { ExperienceEducationComponent } from './features/experience-education/experience-education.component';
 import { ProjectsGridComponent } from './features/projects-grid/projects-grid.component';
+import { ContactFooterComponent } from './features/contact-footer/contact-footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeroComponent, SkillsCertsComponent, ProjectsGridComponent, ExperienceEducationComponent],
+  imports: [RouterOutlet, HeroComponent, SkillsCertsComponent, ProjectsGridComponent, ExperienceEducationComponent, ContactFooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
