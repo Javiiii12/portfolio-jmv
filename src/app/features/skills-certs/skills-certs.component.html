@@ -88,8 +88,8 @@
                         {{ cert.emisor }}
                     </p>
 
-                    <button (click)="openModal(cert)"
-                        class="px-3 py-1 bg-black border border-slate-700 text-slate-400 text-xs hover:border-green-500 hover:text-green-500 transition-colors w-full uppercase tracking-widest">
+                    <button [routerLink]="['/cert', cert.id]"
+                        class="px-3 py-1 bg-black border border-slate-700 text-slate-400 text-xs hover:border-green-500 hover:text-green-500 transition-colors w-full uppercase tracking-widest cursor-pointer">
                         [ ANALYZE_LOGS ]
                     </button>
 

@@ -25,7 +25,7 @@
         @for (project of filteredProjects(); track project.titulo; let i = $index) {
         @if (project.categoria === 'Ciberseguridad') {
         <article class="col-span-1 md:col-span-2 lg:col-span-3">
-            <a [href]="project.enlace" target="_blank"
+            <a [routerLink]="['/writeup', project.titulo.toLowerCase().replace(' ', '-').replace('[', '').replace(']', '')]"
                 class="flex items-center p-4 bg-slate-800/80 rounded-lg border border-slate-700 hover:border-emerald-500 transition-all cursor-pointer group w-full">
                 <!-- Izquierda (Avatar de la máquina) -->
                 <div
@@ -69,7 +69,7 @@
             </div>
 
             <div class="mt-auto border-t border-gray-800 pt-4">
-                <a [href]="project.enlace" target="_blank"
+                <a [routerLink]="['/project', project.titulo.toLowerCase().replace(' ', '-')]"
                     class="inline-flex items-center text-sm font-bold text-gray-300 transition-colors hover:text-cyan-400">
                     > Execute ./code <span class="ml-2 animate-pulse">_</span>
                 </a>

@@ -2,10 +2,12 @@ import { Component, inject, signal, computed } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { PortfolioService } from '../../core/portfolio.service';
 
+import { RouterModule } from '@angular/router';
+
 @Component({
     selector: 'app-projects-grid',
     standalone: true,
-    imports: [],
+    imports: [RouterModule],
     templateUrl: './projects-grid.component.html'
 })
 export class ProjectsGridComponent {

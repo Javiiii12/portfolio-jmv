@@ -2,10 +2,12 @@ import { Component, inject, signal } from '@angular/core';
 import { PortfolioService } from '../../core/portfolio.service';
 import { ICertificacion } from '../../core/portfolio.interfaces';
 
+import { RouterModule } from '@angular/router';
+
 @Component({
     selector: 'app-skills-certs',
     standalone: true,
-    imports: [],
+    imports: [RouterModule],
     templateUrl: './skills-certs.component.html'
 })
 export class SkillsCertsComponent {
