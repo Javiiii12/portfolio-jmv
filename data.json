@@ -469,7 +469,13 @@
                 "logCompleted": "Phase 1 successfully completed (Tutorial, ProtoVault Breach, Thief's Shadow, Quantum Enigma, Echo Path). Machines compromised by applying filter evasion, business logic exploitation, and critical vulnerabilities.",
                 "logIncomplete": "Phase 2 (Weeks 5-8) aborted. Operations suspended due to time constraints (strict timeboxing due to professional and academic commitments).",
                 "verdict": "Achieving a spot in the Top 8% globally in an OffSec event while only participating in half of the challenges demonstrates an exceptional offensive efficiency ratio. A perfect tactical training to keep methodologies sharp under pressure."
-            }
+            },
+            "gallery": [
+                "images/echo-badge.png",
+                "images/echo-dashboard.png",
+                "images/echo-progress-1.png",
+                "images/echo-progress-2.png"
+            ]
         }
     }
 }
