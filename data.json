@@ -147,6 +147,7 @@
             "tecnologia": "OffSec CTF",
             "enlace": "#",
             "icono": "CTF",
+            "imagen": "images/echo-badge.png",
             "status": "> Status: Badge Acquired _"
         }
     ],
