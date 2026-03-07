@@ -53,17 +53,64 @@
         <p><span class="text-red-400 font-bold">>_ LOWLIGHTS:</span> {{ cert.reviewWorst }}</p>
         }
 
+        <!-- Secciones adicionales dinámicas (Temario y Estudio) -->
+        @if (cert.syllabusIntro || cert.syllabusItems) {
+        <div class="mt-8 pt-6 border-t border-slate-800">
+            <h3 class="text-xl font-bold text-cyan-400 mb-4 uppercase">[ SECCIÓN: TEMARIO Y VULNERABILIDADES (AWAE) ]
+            </h3>
+            @if (cert.syllabusIntro) {
+            <p class="mb-6">{{ cert.syllabusIntro }}</p>
+            }
+            @if (cert.syllabusItems) {
+            <ul class="space-y-4">
+                @for (item of cert.syllabusItems; track item.title) {
+                <li>
+                    <span class="text-emerald-400 font-bold">{{ item.title }}:</span> {{ item.description }}
+                </li>
+                }
+            </ul>
+            }
+        </div>
+        }
+
+        @if (cert.studyIntro || cert.studyItems) {
+        <div class="mt-8 pt-6 border-t border-slate-800">
+            <h3 class="text-xl font-bold text-cyan-400 mb-4 uppercase">[ SECCIÓN: MATERIAL DE ESTUDIO Y PREPARACIÓN ]
+            </h3>
+            @if (cert.studyIntro) {
+            <p class="mb-6">{{ cert.studyIntro }}</p>
+            }
+            @if (cert.studyItems) {
+            <ul class="space-y-4">
+                @for (item of cert.studyItems; track item.title) {
+                <li>
+                    <span class="text-emerald-400 font-bold">{{ item.title }}:</span> {{ item.description }}
+                </li>
+                }
+            </ul>
+            }
+        </div>
+        }
+
         @if (cert.verdict) {
-        <p><span class="text-cyan-400 font-bold">>_ VERDICT:</span> {{ cert.verdict }}</p>
+        <p class="mt-8 pt-6 border-t border-slate-800"><span class="text-cyan-400 font-bold">>_ VERDICT:</span> {{
+            cert.verdict }}</p>
         }
     </div>
 
     <!-- 3. Botón de Verificación -->
     <div class="mt-12 pt-8 border-t border-slate-800 text-center md:text-left">
-        <a href="#"
+        @if (cert.verifyLink) {
+        <a [href]="cert.verifyLink" target="_blank"
             class="inline-block px-6 py-3 border border-emerald-500 text-emerald-400 font-mono tracking-widest uppercase hover:bg-emerald-500/10 transition-colors">
             [ VERIFY_CREDENTIAL ]
         </a>
+        } @else {
+        <span
+            class="inline-block px-6 py-3 border border-slate-700 text-slate-500 font-mono tracking-widest uppercase bg-slate-900/50">
+            Status: VERIFIED
+        </span>
+        }
     </div>
     } @else {
     <div class="max-w-4xl mx-auto text-slate-300 text-lg leading-relaxed font-mono">

@@ -43,6 +43,11 @@ export interface IProyecto {
     enlace: string;
 }
 
+export interface ICertDetailItem {
+    title: string;
+    description: string;
+}
+
 export interface ICertDetail {
     id: string;
     title: string;
@@ -51,10 +56,15 @@ export interface ICertDetail {
     tags: string[];
     challengeText: string;
     preparationText: string;
+    syllabusIntro?: string;
+    syllabusItems?: ICertDetailItem[];
+    studyIntro?: string;
+    studyItems?: ICertDetailItem[];
     examText: string;
     reviewBest: string;
     reviewWorst: string;
     verdict: string;
+    verifyLink?: string;
 }
 
 export interface IPortfolioData {

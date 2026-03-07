@@ -154,10 +154,53 @@
             ],
             "challengeText": "La certificación OffSec Web Expert (OSWE) [cite: 76, 77] es una de las pruebas más exigentes de la industria, centrada en la revisión de código fuente y la explotación avanzada de aplicaciones web personalizadas.",
             "preparationText": "Para dominar las vulnerabilidades complejas (Deserialización, Advanced SQLi, Server-Side Template Injection), dediqué un año completo a la suscripción de laboratorios, auditando código fuente real y programando mis propios exploits en Python desde cero, sin depender de herramientas automatizadas.",
+            "syllabusIntro": "El enfoque del OSWE es puramente White-Box (caja blanca). No se trata de lanzar herramientas automatizadas, sino de auditar arquitecturas completas. Los principales vectores y tecnologías que dominé durante esta certificación incluyen:",
+            "syllabusItems": [
+                {
+                    "title": "Revisión de Código Fuente",
+                    "description": "Auditoría manual profunda en lenguajes como C# (.NET), Java, Node.js, PHP y Python."
+                },
+                {
+                    "title": "Vulnerabilidades Críticas",
+                    "description": "Identificación y explotación de Deserialización Insegura, Server-Side Template Injection (SSTI), Type Juggling, XML External Entity (XXE) y Server-Side Request Forgery (SSRF)."
+                },
+                {
+                    "title": "Inyecciones Complejas",
+                    "description": "Advanced Blind y Time-based SQL Injection, eludiendo filtros y sanitizaciones personalizadas (Bypass de WAF lógicos)."
+                },
+                {
+                    "title": "Exploit Chaining",
+                    "description": "La joya de la corona del OSWE. Capacidad para encadenar múltiples vulnerabilidades menores (ej. un XSS que roba una cookie, para hacer un SSRF, que lee un archivo local) para conseguir el objetivo final: Ejecución Remota de Comandos (RCE)."
+                },
+                {
+                    "title": "Automatización Ofensiva",
+                    "description": "Creación de scripts personalizados en Python que automatizan todo el proceso de explotación (desde el bypass de autenticación hasta la reverse shell) con un solo clic."
+                }
+            ],
+            "studyIntro": "Además de exprimir el laboratorio oficial de 1 año de OffSec, complementé mi formación con recursos externos para dominar cada vulnerabilidad antes de enfrentarme al examen:",
+            "studyItems": [
+                {
+                    "title": "PortSwigger Web Security Academy",
+                    "description": "Resolución de los laboratorios de nivel Practitioner y Expert, fundamentales para afianzar conceptos de Deserialización y SSTI."
+                },
+                {
+                    "title": "HackTheBox (White-Box Machines)",
+                    "description": "Resolución de máquinas orientadas a revisión de código y explotación web compleja para simular entornos de examen."
+                },
+                {
+                    "title": "Análisis de CVEs Públicos",
+                    "description": "Lectura de advisories y recreación de exploits públicos (PoC) para entender cómo los investigadores descubren fallos en aplicaciones del mundo real."
+                },
+                {
+                    "title": "Repositorios de la Comunidad",
+                    "description": "Consulta de guías y cheatsheets de preparación para OSWE en GitHub, aprendiendo trucos avanzados de scripting en Python para interactuar con APIs y sesiones web complejas."
+                }
+            ],
             "examText": "El entorno de examen requiere identificar vulnerabilidades lógicas y encadenarlas para conseguir ejecución remota de comandos (RCE). Tras una primera iteración de aprendizaje, superé el examen en el segundo intento. El punto de inflexión fue auditar y explotar con éxito la última máquina, logrando el RCE definitivo a tan solo dos horas de finalizar el tiempo reglamentario de 48 horas.",
             "reviewBest": "Profundización real en auditoría de código blanco puro.",
             "reviewWorst": "El laboratorio y la interfaz son anticuados y poco responsivos.",
-            "verdict": "Esta experiencia forjó una mentalidad analítica profunda. Ahora no solo busco fallos en la superficie, sino que audito la arquitectura del software, entiendo el flujo de datos inseguro y construyo cadenas de explotación complejas (Exploit Chaining) para vulnerar sistemas de máxima seguridad."
+            "verdict": "Esta experiencia forjó una mentalidad analítica profunda. Ahora no solo busco fallos en la superficie, sino que audito la arquitectura del software, entiendo el flujo de datos inseguro y construyo cadenas de explotación complejas (Exploit Chaining) para vulnerar sistemas de máxima seguridad.",
+            "verifyLink": "https://www.credential.net/"
         },
         "OSWP": {
             "id": "oswp",
