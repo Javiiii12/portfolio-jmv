@@ -3,6 +3,7 @@ import { PortfolioService } from '../../core/portfolio.service';
 import { ICertificacion } from '../../core/portfolio.interfaces';
 
 import { RouterModule } from '@angular/router';
+import { LanguageService } from '../../core/language.service';
 
 @Component({
     selector: 'app-skills-certs',
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
 })
 export class SkillsCertsComponent {
     public portfolioService = inject(PortfolioService);
+    public languageService = inject(LanguageService);
     public selectedCert = signal<ICertificacion | null>(null);
 
     public openModal(cert: ICertificacion) {

@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { PortfolioService } from '../../core/portfolio.service';
+import { LanguageService } from '../../core/language.service';
 
 @Component({
     selector: 'app-experience-education',
@@ -9,4 +10,5 @@ import { PortfolioService } from '../../core/portfolio.service';
 })
 export class ExperienceEducationComponent {
     public portfolioService = inject(PortfolioService);
+    public languageService = inject(LanguageService);
 }

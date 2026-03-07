@@ -3,6 +3,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { PortfolioService } from '../../core/portfolio.service';
 
 import { RouterModule } from '@angular/router';
+import { LanguageService } from '../../core/language.service';
 
 @Component({
     selector: 'app-projects-grid',
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
 })
 export class ProjectsGridComponent {
     public portfolioService = inject(PortfolioService);
+    public languageService = inject(LanguageService);
     public sanitizer = inject(DomSanitizer);
 
     public sanitizeHtml(description: string): SafeHtml {
