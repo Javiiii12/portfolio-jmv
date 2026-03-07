@@ -1,7 +1,7 @@
 <div class="w-full text-left p-6 min-h-[70vh]">
     <div class="mb-8 border-b border-slate-800 pb-4">
         <!-- Botón de retorno -->
-        <a routerLink="/"
+        <a (click)="goBack($event)"
             class="inline-flex items-center px-4 py-2 border border-slate-700 bg-black/50 hover:bg-slate-800/50 hover:border-green-500 hover:text-green-500 text-slate-400 font-mono text-sm tracking-widest transition-all mb-8 group cursor-pointer">
             <span class="mr-2 group-hover:-translate-x-1 transition-transform">
                 < </span> [ RETURN_TO_MAIN ]
