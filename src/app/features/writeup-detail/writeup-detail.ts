@@ -34,6 +34,7 @@ export class WriteupDetail {
 
     return {
       id: baseWriteup.id,
+      gallery: baseWriteup.gallery,
       ...baseWriteup[lang]
     };
   });
