@@ -25,7 +25,8 @@ export class LanguageService {
         '[APTO]': '[PASSED]',
         'APTO': 'PASSED',
         '> Execute ./code': '> Execute ./code',
-        '> View Write-up': '> View Write-up'
+        '> View Write-up': '> View Write-up',
+        '© 2026 Javier Martínez Valiente. Todos los derechos reservados.': '© 2026 Javier Martínez Valiente. All rights reserved.'
     };
 
     toggleLanguage() {
@@ -94,6 +95,14 @@ export class LanguageService {
             if (form.descripcion.includes('Programación integral web')) form.descripcion = 'Comprehensive web programming. Design of relational databases and development of modern user interfaces and tools.';
             if (form.descripcion.includes('Configuración de sistemas seguros')) form.descripcion = 'Configuration of secure systems, incident management, security auditing, cryptography, and regulatory compliance.';
             if (form.descripcion.includes('Especialización en administración')) form.descripcion = 'Specialization in systems administration, networking, and deployment of secure infrastructures.';
+
+            if (form.titulacion.includes('Certificado en Python')) {
+                form.titulacion = 'Python Certificate by UNIR';
+                form.institucion = 'Automation and Pentesting Tools';
+                form.descripcion = 'Development of automation scripts for security tasks, creation of custom pentesting tools, and forensic data analysis.';
+                form.fecha = 'Apr 24, 2025 - Dec 19, 2025';
+            }
+
             return form;
         });
 

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '../../core/translate.pipe';
 
 @Component({
     selector: 'app-contact-footer',
     standalone: true,
-    imports: [],
+    imports: [TranslatePipe],
     templateUrl: './contact-footer.component.html'
 })
 export class ContactFooterComponent {
