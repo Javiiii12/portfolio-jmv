@@ -64,7 +64,7 @@ export interface ICertDetail {
     reviewBest: string;
     reviewWorst: string;
     verdict: string;
-    verifyLink?: string;
+    verificationUrl?: string;
 }
 
 export interface IPortfolioData {
