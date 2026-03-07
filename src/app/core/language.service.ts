@@ -35,7 +35,12 @@ export class LanguageService {
         '[ REGRESAR A LA PÁGINA PRINCIPAL ]': '[ RETURN TO MAIN PAGE ]',
         'Examen de Certificación': 'Certification Exam',
         '> Solicitando datos de la base central...': '> Requesting data from the central base...',
-        'Error de lectura o credencial no encontrada en el sistema.': 'Read error or credential not found in the system.'
+        'Error de lectura o credencial no encontrada en el sistema.': 'Read error or credential not found in the system.',
+        'GLOBAL RANK': 'GLOBAL RANK',
+        'NEEDLES / POINTS': 'NEEDLES / POINTS',
+        'CAMPAIGN STATUS': 'CAMPAIGN STATUS',
+        '[ MISSION_LOG: PHASE_01 ]': '[ MISSION_LOG: PHASE_01 ]',
+        '[ MISSION_LOG: PHASE_02 ]': '[ MISSION_LOG: PHASE_02 ]'
     };
 
     toggleLanguage() {

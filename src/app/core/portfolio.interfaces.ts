@@ -74,6 +74,26 @@ export interface ICertDetail {
     en: ICertDetailLang;
 }
 
+export interface IWriteupDetailLang {
+    title: string;
+    subtitle: string;
+    overview: string;
+    stats: {
+        rank: string;
+        points: string;
+        status: string;
+    };
+    logCompleted: string;
+    logIncomplete?: string;
+    verdict?: string;
+}
+
+export interface IWriteupDetail {
+    id: string;
+    es: IWriteupDetailLang;
+    en: IWriteupDetailLang;
+}
+
 export interface IPortfolioData {
     perfil: IPerfil;
     habilidades_destacadas: IHabilidadesDestacadas;
@@ -82,4 +102,5 @@ export interface IPortfolioData {
     experiencia: IExperiencia[];
     proyectos: IProyecto[];
     certDetails: Record<string, ICertDetail>;
+    writeupDetails: Record<string, IWriteupDetail>;
 }

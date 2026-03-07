@@ -4,7 +4,7 @@
         <a [routerLink]="['/']" fragment="proyectos"
             class="inline-flex items-center px-4 py-2 border border-slate-700 bg-black/50 hover:bg-slate-800/50 hover:border-green-500 hover:text-green-500 text-slate-400 font-mono text-sm tracking-widest transition-all mb-8 group cursor-pointer">
             <span class="mr-2 group-hover:-translate-x-1 transition-transform">
-                < </span> [ REGRESAR A LA PÁGINA PRINCIPAL ]
+                < </span> {{ languageService.translateUI('[ REGRESAR A LA PÁGINA PRINCIPAL ]') }}
         </a>
 
         <h1 class="text-3xl md:text-5xl font-bold text-green-500 tracking-tight uppercase">
@@ -12,16 +12,74 @@
         </h1>
     </div>
 
+    @if (currentWriteup(); as data) {
     <div class="max-w-4xl mx-auto text-slate-300 text-lg leading-relaxed font-mono">
-        <p class="mb-6">> Desencriptando metodología de intrusión...</p>
-        <p class="mb-6">Esta terminal está preparada para formatear el reporte técnico completo del Pentesting,
-            incluyendo enumeración, explotación y escalada de privilegios.</p>
 
-        <div class="p-4 border border-slate-800 bg-black/30 text-green-500/80 mb-6">
+        <h2 class="text-3xl font-bold text-slate-200 mb-2">{{ data.title }}</h2>
+        <p class="text-emerald-500 font-bold mb-6">> {{ data.subtitle }}</p>
+
+        <p class="mb-8">{{ data.overview }}</p>
+
+        <!-- Panel de Estadísticas -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+            <div class="border border-slate-700 bg-slate-800/50 p-4 rounded-lg text-center">
+                <p class="text-slate-400 text-sm">{{ languageService.translateUI('GLOBAL RANK') }}</p>
+                <p class="text-2xl font-bold text-cyan-400">{{ data.stats.rank }}</p>
+            </div>
+            <div class="border border-slate-700 bg-slate-800/50 p-4 rounded-lg text-center">
+                <p class="text-slate-400 text-sm">{{ languageService.translateUI('NEEDLES / POINTS') }}</p>
+                <p class="text-2xl font-bold text-emerald-400">{{ data.stats.points }}</p>
+            </div>
+            <div class="border border-slate-700 bg-slate-800/50 p-4 rounded-lg text-center">
+                <p class="text-slate-400 text-sm">{{ languageService.translateUI('CAMPAIGN STATUS') }}</p>
+                <p class="text-2xl font-bold text-slate-300">{{ data.stats.status }}</p>
+            </div>
+        </div>
+
+        <!-- Timeline de Ejecución -->
+        <div class="space-y-6 mt-10 border-t border-slate-800 pt-8">
+            <div class="p-4 border border-emerald-900 bg-black/30 mb-6 relative">
+                <div
+                    class="absolute -left-3 top-4 w-6 h-6 bg-emerald-900 rounded-full flex items-center justify-center border-2 border-slate-900">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                </div>
+                <h3 class="text-emerald-400 font-bold mb-3 pl-4">{{ languageService.translateUI('[ MISSION_LOG: PHASE_01
+                    ]') }}</h3>
+                <p class="text-slate-300 pl-4">{{ data.logCompleted }}</p>
+            </div>
+
+            @if (data.logIncomplete) {
+            <div class="p-4 border border-amber-900 bg-black/30 mb-6 relative">
+                <div
+                    class="absolute -left-3 top-4 w-6 h-6 bg-amber-900 rounded-full flex items-center justify-center border-2 border-slate-900">
+                    <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                </div>
+                <h3 class="text-amber-500 font-bold mb-3 pl-4">{{ languageService.translateUI('[ MISSION_LOG: PHASE_02
+                    ]') }}</h3>
+                <p class="text-slate-400 pl-4 italic">{{ data.logIncomplete }}</p>
+            </div>
+            }
+
+            @if (data.verdict) {
+            <div class="mt-8 pt-6 border-t border-slate-800">
+                <p class="text-slate-300"><span class="text-cyan-400 font-bold">{{ languageService.translateUI('>_
+                        VEREDICTO:') }}</span> {{ data.verdict }}</p>
+            </div>
+            }
+        </div>
+    </div>
+    } @else {
+    <div class="max-w-4xl mx-auto text-slate-300 text-lg leading-relaxed font-mono">
+        <p class="mb-6">{{ languageService.translateUI('> Solicitando datos de la base central...') }}</p>
+        <p class="mb-6">{{ languageService.translateUI('Error de lectura o credencial no encontrada en el sistema.') }}
+        </p>
+
+        <div class="p-4 border border-red-900 bg-black/30 text-red-500/80 mb-6">
             <code>
-                # Enumeration Scan<br>
-                nmap -sC -sV -p- {{ (id$ | async) }}
+                > System Exception<br>
+                > Status: NO_DATA_FOUND
             </code>
         </div>
     </div>
+    }
 </div>
