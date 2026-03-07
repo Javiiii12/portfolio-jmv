@@ -139,6 +139,15 @@
             "categoria": "Ciberseguridad",
             "tecnologia": "Python",
             "enlace": "#"
+        },
+        {
+            "titulo": "Echo Response: The Gauntlet",
+            "descripcion": "Participación activa en el evento oficial de OffSec 'Echo Response'. Resolución de retos tácticos de ciberseguridad bajo presión, logrando la insignia oficial y posicionándome en el Top 8% global (Rango 341 de 4267 participantes).",
+            "categoria": "Ciberseguridad",
+            "tecnologia": "OffSec CTF",
+            "enlace": "#",
+            "icono": "CTF",
+            "status": "> Status: Badge Acquired _"
         }
     ],
     "certDetails": {

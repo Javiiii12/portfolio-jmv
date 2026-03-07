@@ -41,6 +41,8 @@ export interface IProyecto {
     categoria: string;
     tecnologia: string;
     enlace: string;
+    icono?: string;
+    status?: string;
 }
 
 export interface ICertDetailItem {
