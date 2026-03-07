@@ -153,151 +153,292 @@
     "certDetails": {
         "OSWE": {
             "id": "oswe",
-            "title": "Offensive Security Web Expert",
             "credentialId": "Validated",
             "date": "May 5, 2025",
-            "tags": [
-                "Advanced Web Exploitation",
-                "White Box Pentesting",
-                "Code Review"
-            ],
-            "challengeText": "La certificación OffSec Web Expert (OSWE) es una de las pruebas más exigentes de la industria, centrada en la revisión de código fuente y la explotación avanzada de aplicaciones web personalizadas.",
-            "preparationText": "Para dominar las vulnerabilidades complejas (Deserialización, Advanced SQLi, Server-Side Template Injection), dediqué un año completo a la suscripción de laboratorios, auditando código fuente real y programando mis propios exploits en Python desde cero, sin depender de herramientas automatizadas.",
-            "syllabusIntro": "El enfoque del OSWE es puramente White-Box (caja blanca). No se trata de lanzar herramientas automatizadas, sino de auditar arquitecturas completas. Los principales vectores y tecnologías que dominé durante esta certificación incluyen:",
-            "syllabusItems": [
-                {
-                    "title": "Revisión de Código Fuente",
-                    "description": "Auditoría manual profunda en lenguajes como C# (.NET), Java, Node.js, PHP y Python."
-                },
-                {
-                    "title": "Vulnerabilidades Críticas",
-                    "description": "Identificación y explotación de Deserialización Insegura, Server-Side Template Injection (SSTI), Type Juggling, XML External Entity (XXE) y Server-Side Request Forgery (SSRF)."
-                },
-                {
-                    "title": "Inyecciones Complejas",
-                    "description": "Advanced Blind y Time-based SQL Injection, eludiendo filtros y sanitizaciones personalizadas (Bypass de WAF lógicos)."
-                },
-                {
-                    "title": "Exploit Chaining",
-                    "description": "La joya de la corona del OSWE. Capacidad para encadenar múltiples vulnerabilidades menores (ej. un XSS que roba una cookie, para hacer un SSRF, que lee un archivo local) para conseguir el objetivo final: Ejecución Remota de Comandos (RCE)."
-                },
-                {
-                    "title": "Automatización Ofensiva",
-                    "description": "Creación de scripts personalizados en Python que automatizan todo el proceso de explotación (desde el bypass de autenticación hasta la reverse shell) con un solo clic."
-                }
-            ],
-            "studyIntro": "Además de exprimir el laboratorio oficial de 1 año de OffSec, complementé mi formación con recursos externos para dominar cada vulnerabilidad antes de enfrentarme al examen:",
-            "studyItems": [
-                {
-                    "title": "PortSwigger Web Security Academy",
-                    "description": "Resolución de los laboratorios de nivel Practitioner y Expert, fundamentales para afianzar conceptos de Deserialización y SSTI."
-                },
-                {
-                    "title": "HackTheBox (White-Box Machines)",
-                    "description": "Resolución de máquinas orientadas a revisión de código y explotación web compleja para simular entornos de examen."
-                },
-                {
-                    "title": "Análisis de CVEs Públicos",
-                    "description": "Lectura de advisories y recreación de exploits públicos (PoC) para entender cómo los investigadores descubren fallos en aplicaciones del mundo real."
-                },
-                {
-                    "title": "Repositorios de la Comunidad",
-                    "description": "Consulta de guías y cheatsheets de preparación para OSWE en GitHub, aprendiendo trucos avanzados de scripting en Python para interactuar con APIs y sesiones web complejas."
-                }
-            ],
-            "examText": "El entorno de examen requiere identificar vulnerabilidades lógicas y encadenarlas para conseguir ejecución remota de comandos (RCE). Tras una primera iteración de aprendizaje, superé el examen en el segundo intento. El punto de inflexión fue auditar y explotar con éxito la última máquina, logrando el RCE definitivo a tan solo dos horas de finalizar el tiempo reglamentario de 48 horas.",
-            "reviewBest": "Profundización real en auditoría de código blanco puro.",
-            "reviewWorst": "El laboratorio y la interfaz son anticuados y poco responsivos.",
-            "verdict": "Esta experiencia forjó una mentalidad analítica profunda. Ahora no solo busco fallos en la superficie, sino que audito la arquitectura del software, entiendo el flujo de datos inseguro y construyo cadenas de explotación complejas (Exploit Chaining) para vulnerar sistemas de máxima seguridad.",
-            "verificationUrl": "https://credentials.offsec.com/3c5db88d-f560-4cc7-b14d-593154af51ca#acc.UXsc8qn9"
+            "verificationUrl": "https://credentials.offsec.com/3c5db88d-f560-4cc7-b14d-593154af51ca#acc.UXsc8qn9",
+            "es": {
+                "title": "Offensive Security Web Expert",
+                "tags": [
+                    "Advanced Web Exploitation",
+                    "White Box Pentesting",
+                    "Code Review"
+                ],
+                "challengeText": "La certificación OffSec Web Expert (OSWE) es una de las pruebas más exigentes de la industria, centrada en la revisión de código fuente y la explotación avanzada de aplicaciones web personalizadas.",
+                "preparationText": "Para dominar las vulnerabilidades complejas (Deserialización, Advanced SQLi, Server-Side Template Injection), dediqué un año completo a la suscripción de laboratorios, auditando código fuente real y programando mis propios exploits en Python desde cero, sin depender de herramientas automatizadas.",
+                "examText": "El entorno de examen requiere identificar vulnerabilidades lógicas y encadenarlas para conseguir ejecución remota de comandos (RCE). Tras una primera iteración de aprendizaje, superé el examen en el segundo intento. El punto de inflexión fue auditar y explotar con éxito la última máquina, logrando el RCE definitivo a tan solo dos horas de finalizar el tiempo reglamentario de 48 horas.",
+                "reviewBest": "Profundización real en auditoría de código blanco puro.",
+                "reviewWorst": "El laboratorio y la interfaz son anticuados y poco responsivos.",
+                "verdict": "Esta experiencia forjó una mentalidad analítica profunda. Ahora no solo busco fallos en la superficie, sino que audito la arquitectura del software, entiendo el flujo de datos inseguro y construyo cadenas de explotación complejas (Exploit Chaining) para vulnerar sistemas de máxima seguridad.",
+                "syllabusIntro": "El enfoque del OSWE es puramente White-Box (caja blanca). No se trata de lanzar herramientas automatizadas, sino de auditar arquitecturas completas. Los principales vectores y tecnologías que dominé durante esta certificación incluyen:",
+                "syllabusItems": [
+                    {
+                        "title": "Revisión de Código Fuente",
+                        "description": "Auditoría manual profunda en lenguajes como C# (.NET), Java, Node.js, PHP y Python."
+                    },
+                    {
+                        "title": "Vulnerabilidades Críticas",
+                        "description": "Identificación y explotación de Deserialización Insegura, Server-Side Template Injection (SSTI), Type Juggling, XML External Entity (XXE) y Server-Side Request Forgery (SSRF)."
+                    },
+                    {
+                        "title": "Inyecciones Complejas",
+                        "description": "Advanced Blind y Time-based SQL Injection, eludiendo filtros y sanitizaciones personalizadas (Bypass de WAF lógicos)."
+                    },
+                    {
+                        "title": "Exploit Chaining",
+                        "description": "La joya de la corona del OSWE. Capacidad para encadenar múltiples vulnerabilidades menores (ej. un XSS que roba una cookie, para hacer un SSRF, que lee un archivo local) para conseguir el objetivo final: Ejecución Remota de Comandos (RCE)."
+                    },
+                    {
+                        "title": "Automatización Ofensiva",
+                        "description": "Creación de scripts personalizados en Python que automatizan todo el proceso de explotación (desde el bypass de autenticación hasta la reverse shell) con un solo clic."
+                    }
+                ],
+                "studyIntro": "Además de exprimir el laboratorio oficial de 1 año de OffSec, complementé mi formación con recursos externos para dominar cada vulnerabilidad antes de enfrentarme al examen:",
+                "studyItems": [
+                    {
+                        "title": "PortSwigger Web Security Academy",
+                        "description": "Resolución de los laboratorios de nivel Practitioner y Expert, fundamentales para afianzar conceptos de Deserialización y SSTI."
+                    },
+                    {
+                        "title": "HackTheBox (White-Box Machines)",
+                        "description": "Resolución de máquinas orientadas a revisión de código y explotación web compleja para simular entornos de examen."
+                    },
+                    {
+                        "title": "Análisis de CVEs Públicos",
+                        "description": "Lectura de advisories y recreación de exploits públicos (PoC) para entender cómo los investigadores descubren fallos en aplicaciones del mundo real."
+                    },
+                    {
+                        "title": "Repositorios de la Comunidad",
+                        "description": "Consulta de guías y cheatsheets de preparación para OSWE en GitHub, aprendiendo trucos avanzados de scripting en Python para interactuar con APIs y sesiones web complejas."
+                    }
+                ]
+            },
+            "en": {
+                "title": "Offensive Security Web Expert",
+                "tags": [
+                    "Advanced Web Exploitation",
+                    "White Box Pentesting",
+                    "Code Review"
+                ],
+                "challengeText": "The OffSec Web Expert (OSWE) certification is one of the most demanding exams in the industry, focused on source code review and advanced exploitation of custom web applications.",
+                "preparationText": "To master complex vulnerabilities (Insecure Deserialization, Advanced SQLi, SSTI), I dedicated a full year to laboratory subscriptions, auditing real source code and programming my own exploits in Python from scratch.",
+                "examText": "The exam requires identifying logical vulnerabilities and chaining them to achieve RCE. After a first learning iteration, I passed on the second attempt, exploiting the last machine and getting RCE just two hours before the 48-hour limit.",
+                "reviewBest": "Real deep dive into pure white-box code auditing.",
+                "reviewWorst": "The lab and interface are outdated and unresponsive.",
+                "verdict": "This experience forged a deep analytical mindset. Now I don't just look for surface flaws, but I audit the software architecture, understand insecure data flows, and build complex exploit chains.",
+                "syllabusIntro": "The OSWE approach is purely White-Box. It is not about launching automated tools, but auditing complete architectures. Mastering vectors and technologies include:",
+                "syllabusItems": [
+                    {
+                        "title": "Source Code Review",
+                        "description": "Deep manual auditing in languages like C# (.NET), Java, Node.js, PHP and Python."
+                    },
+                    {
+                        "title": "Critical Vulnerabilities",
+                        "description": "Identification and exploitation of Insecure Deserialization, SSTI, Type Juggling, XXE and SSRF."
+                    },
+                    {
+                        "title": "Complex Injections",
+                        "description": "Advanced Blind and Time-based SQL Injections, bypassing custom filters and sanitizations (Logical WAF Bypass)."
+                    },
+                    {
+                        "title": "Exploit Chaining",
+                        "description": "The crown jewel of OSWE. Chaining minor vulnerabilities (e.g. XSS to steal cookie -> SSRF -> Read local file) to achieve the final goal: Remote Code Execution (RCE)."
+                    },
+                    {
+                        "title": "Offensive Automation",
+                        "description": "Creation of custom Python scripts that automate the entire exploitation process (from auth bypass to reverse shell) with a single click."
+                    }
+                ],
+                "studyIntro": "In addition to the official 1-year OffSec lab, I complemented my training with external resources:",
+                "studyItems": [
+                    {
+                        "title": "PortSwigger Web Security Academy",
+                        "description": "Solving Practitioner and Expert level labs, fundamental for consolidating Deserialization and SSTI concepts."
+                    },
+                    {
+                        "title": "HackTheBox (White-Box Machines)",
+                        "description": "Solving machines oriented towards code review and complex web exploitation."
+                    },
+                    {
+                        "title": "Public CVE Analysis",
+                        "description": "Reading advisories and recreating public exploits (PoC) to understand how researchers discover flaws."
+                    },
+                    {
+                        "title": "Community Repositories",
+                        "description": "Consulting OSWE prep guides and cheatsheets on GitHub, learning advanced Python scripting tricks."
+                    }
+                ]
+            }
         },
         "OSWP": {
             "id": "oswp",
-            "title": "Offensive Security Wireless Professional",
             "credentialId": "Validated",
             "date": "Pending",
-            "tags": [
-                "Wireless Pentesting",
-                "802.11",
-                "Network Auditing"
-            ],
-            "challengeText": "La certificación OSWP certifica la capacidad técnica para auditar, identificar y explotar vulnerabilidades en redes inalámbricas 802.11. A diferencia de las auditorías tradicionales, requiere interactuar físicamente con el espectro de radiofrecuencia, capturar tráfico en el aire y comprometer protocolos de cifrado corporativos.",
-            "preparationText": "",
-            "syllabusIntro": "La preparación exige un dominio absoluto de la suite Aircrack-ng y herramientas complementarias. Las habilidades consolidadas incluyen:",
-            "syllabusItems": [
-                {
-                    "title": "Análisis y Captura",
-                    "description": "Análisis y captura de paquetes (Handshakes y PMKID)."
-                },
-                {
-                    "title": "Explotación y Cracking",
-                    "description": "Explotación y cracking de protocolos WPA, WPA2 (Personal y Enterprise)."
-                },
-                {
-                    "title": "Ataques de Infraestructura",
-                    "description": "Despliegue de ataques de infraestructura: Rogue Access Points y Evil Twins."
-                },
-                {
-                    "title": "Evasión y Bypass",
-                    "description": "Evasión de controles de acceso (MAC Spoofing) y bypass de portales cautivos."
-                }
-            ],
-            "examText": "El examen práctico es un entorno de laboratorio simulado donde se debe demostrar la capacidad de comprometer diferentes redes inalámbricas configuradas con distintas medidas de seguridad, extrayendo las claves de red y demostrando acceso total bajo presión de tiempo.",
-            "reviewBest": "",
-            "reviewWorst": "",
-            "verdict": "Imprescindible para auditorías físicas y Red Team. Proporciona una base sólida sobre cómo las configuraciones inalámbricas deficientes pueden ser el vector de entrada inicial a toda la red interna de una organización.",
-            "verificationUrl": "https://credentials.offsec.com/445412c6-a93b-4f71-9af5-4ec9b3a608de#acc.Y2FI1EOT"
+            "verificationUrl": "https://credentials.offsec.com/445412c6-a93b-4f71-9af5-4ec9b3a608de#acc.Y2FI1EOT",
+            "es": {
+                "title": "Offensive Security Wireless Professional",
+                "tags": [
+                    "Wireless Pentesting",
+                    "802.11",
+                    "Network Auditing"
+                ],
+                "challengeText": "La certificación OSWP certifica la capacidad técnica para auditar, identificar y explotar vulnerabilidades en redes inalámbricas 802.11. A diferencia de las auditorías tradicionales, requiere interactuar físicamente con el espectro de radiofrecuencia, capturar tráfico en el aire y comprometer protocolos de cifrado corporativos.",
+                "preparationText": "",
+                "examText": "El examen práctico es un entorno de laboratorio simulado donde se debe demostrar la capacidad de comprometer diferentes redes inalámbricas configuradas con distintas medidas de seguridad, extrayendo las claves de red y demostrando acceso total bajo presión de tiempo.",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Imprescindible para auditorías físicas y Red Team. Proporciona una base sólida sobre cómo las configuraciones inalámbricas deficientes pueden ser el vector de entrada inicial a toda la red interna de una organización.",
+                "syllabusIntro": "La preparación exige un dominio absoluto de la suite Aircrack-ng y herramientas complementarias. Las habilidades consolidadas incluyen:",
+                "syllabusItems": [
+                    {
+                        "title": "Análisis y Captura",
+                        "description": "Análisis y captura de paquetes (Handshakes y PMKID)."
+                    },
+                    {
+                        "title": "Explotación y Cracking",
+                        "description": "Explotación y cracking de protocolos WPA, WPA2 (Personal y Enterprise)."
+                    },
+                    {
+                        "title": "Ataques de Infraestructura",
+                        "description": "Despliegue de ataques de infraestructura: Rogue Access Points y Evil Twins."
+                    },
+                    {
+                        "title": "Evasión y Bypass",
+                        "description": "Evasión de controles de acceso (MAC Spoofing) y bypass de portales cautivos."
+                    }
+                ]
+            },
+            "en": {
+                "title": "Offensive Security Wireless Professional",
+                "tags": [
+                    "Wireless Pentesting",
+                    "802.11",
+                    "Network Auditing"
+                ],
+                "challengeText": "The OSWP certifies the technical ability to audit, identify, and exploit vulnerabilities in 802.11 wireless networks. Unlike traditional audits, it requires physical interaction with the RF spectrum, capturing traffic mid-air, and compromising corporate encryption protocols.",
+                "preparationText": "",
+                "examText": "The practical exam is a simulated lab environment where you must demonstrate the ability to compromise different wireless networks configured with various security measures, extracting network keys and proving total access under time pressure.",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Essential for physical audits and Red Teaming. It provides a solid foundation on how deficient wireless configurations can be the initial entry vector to an organization's entire internal network.",
+                "syllabusIntro": "Preparation requires absolute mastery of the Aircrack-ng suite and complementary tools. Consolidated skills include:",
+                "syllabusItems": [
+                    {
+                        "title": "Analysis & Capture",
+                        "description": "Packet analysis and capture (Handshakes and PMKID)."
+                    },
+                    {
+                        "title": "Exploitation & Cracking",
+                        "description": "Exploitation and cracking of WPA, WPA2 protocols (Personal and Enterprise)."
+                    },
+                    {
+                        "title": "Infrastructure Attacks",
+                        "description": "Deployment of infrastructure attacks: Rogue Access Points and Evil Twins."
+                    },
+                    {
+                        "title": "Evasion & Bypass",
+                        "description": "Access control evasion (MAC Spoofing) and captive portal bypass."
+                    }
+                ]
+            }
         },
         "eCCPT": {
             "id": "eccpt",
-            "title": "Certified Professional Pentester",
             "credentialId": "Pending",
             "date": "Pending",
-            "tags": [
-                "Network Pivoting",
-                "Active Directory",
-                "Buffer Overflow"
-            ],
-            "challengeText": "Lorem ipsum eCCPT challenge",
-            "preparationText": "Lorem ipsum prep eCCPT",
-            "examText": "Lorem ipsum exam eCCPT",
-            "reviewBest": "",
-            "reviewWorst": "",
-            "verdict": "Pendiente de redactar."
+            "es": {
+                "title": "Certified Professional Pentester",
+                "tags": [
+                    "Network Pivoting",
+                    "Active Directory",
+                    "Buffer Overflow"
+                ],
+                "challengeText": "Lorem ipsum eCCPT challenge",
+                "preparationText": "Lorem ipsum prep eCCPT",
+                "examText": "Lorem ipsum exam eCCPT",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Pendiente de redactar."
+            },
+            "en": {
+                "title": "Certified Professional Pentester",
+                "tags": [
+                    "Network Pivoting",
+                    "Active Directory",
+                    "Buffer Overflow"
+                ],
+                "challengeText": "Lorem ipsum eCCPT challenge",
+                "preparationText": "Lorem ipsum prep eCCPT",
+                "examText": "Lorem ipsum exam eCCPT",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Pending to be written."
+            }
         },
         "eWPT": {
             "id": "ewpt",
-            "title": "Web App Penetration Tester",
             "credentialId": "Pending",
             "date": "Pending",
-            "tags": [
-                "OWASP Top 10",
-                "Black Box",
-                "Burp Suite"
-            ],
-            "challengeText": "Lorem ipsum eWPT challenge",
-            "preparationText": "Lorem ipsum prep eWPT",
-            "examText": "Lorem ipsum exam eWPT",
-            "reviewBest": "",
-            "reviewWorst": "",
-            "verdict": "Pendiente de redactar."
+            "es": {
+                "title": "Web App Penetration Tester",
+                "tags": [
+                    "OWASP Top 10",
+                    "Black Box",
+                    "Burp Suite"
+                ],
+                "challengeText": "Lorem ipsum eWPT challenge",
+                "preparationText": "Lorem ipsum prep eWPT",
+                "examText": "Lorem ipsum exam eWPT",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Pendiente de redactar."
+            },
+            "en": {
+                "title": "Web App Penetration Tester",
+                "tags": [
+                    "OWASP Top 10",
+                    "Black Box",
+                    "Burp Suite"
+                ],
+                "challengeText": "Lorem ipsum eWPT challenge",
+                "preparationText": "Lorem ipsum prep eWPT",
+                "examText": "Lorem ipsum exam eWPT",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Pending to be written."
+            }
         },
         "eJPT": {
             "id": "ejpt",
-            "title": "Junior Penetration Tester",
             "credentialId": "Pending",
             "date": "Pending",
-            "tags": [
-                "Routing",
-                "Metasploit",
-                "Basic Pentesting"
-            ],
-            "challengeText": "Lorem ipsum eJPT challenge",
-            "preparationText": "Lorem ipsum prep eJPT",
-            "examText": "Lorem ipsum exam eJPT",
-            "reviewBest": "",
-            "reviewWorst": "",
-            "verdict": "Pendiente de redactar."
+            "es": {
+                "title": "Junior Penetration Tester",
+                "tags": [
+                    "Routing",
+                    "Metasploit",
+                    "Basic Pentesting"
+                ],
+                "challengeText": "Lorem ipsum eJPT challenge",
+                "preparationText": "Lorem ipsum prep eJPT",
+                "examText": "Lorem ipsum exam eJPT",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Pendiente de redactar."
+            },
+            "en": {
+                "title": "Junior Penetration Tester",
+                "tags": [
+                    "Routing",
+                    "Metasploit",
+                    "Basic Pentesting"
+                ],
+                "challengeText": "Lorem ipsum eJPT challenge",
+                "preparationText": "Lorem ipsum prep eJPT",
+                "examText": "Lorem ipsum exam eJPT",
+                "reviewBest": "",
+                "reviewWorst": "",
+                "verdict": "Pending to be written."
+            }
         }
     }
 }
