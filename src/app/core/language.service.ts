@@ -101,7 +101,7 @@ export class LanguageService {
         translated.experiencia = translated.experiencia.map((exp: IExperiencia) => {
             if (exp.puesto.includes('Auditor')) {
                 exp.puesto = 'Junior Security Auditor';
-                exp.fecha = exp.fecha.replace('feb.', 'Feb.').replace('abr.', 'Apr.');
+                exp.fecha = exp.fecha.replace('Oct', 'Oct').replace('Dic', 'Dec');
                 exp.hitos = [
                     'Technical audit of web and infrastructure vulnerabilities.',
                     'Writing executive reports for the development team.',

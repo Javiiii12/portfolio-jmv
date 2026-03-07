@@ -21,11 +21,10 @@
     </div>
 
     <!-- Grid de Proyectos -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-0 lg:px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-0 lg:px-4">
         @for (project of filteredProjects(); track project.titulo; let i = $index) {
         <article
             class="bg-black/50 border-y border-r border-slate-800 p-6 flex flex-col justify-between transition-all duration-300 group border-l-2"
-            [class.md:col-span-2]="i === 0 || i === 1" [class.lg:col-span-2]="i === 0 || i === 1"
             [class.border-l-cyan-400]="project.categoria === 'Desarrollo'"
             [class.border-l-green-500]="project.categoria === 'Ciberseguridad'"
             [class.hover:border-cyan-400]="project.categoria === 'Desarrollo'"
