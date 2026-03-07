@@ -68,6 +68,13 @@
             "descripcion": "Máster Full Stack Developer. Arquitectura Full Stack, desarrollo frontend (Angular), lógica y scripting (Python, JS), y gestión de bases de datos."
         },
         {
+            "titulacion": "Certificado en Python por la UNIR",
+            "institucion": "Automatización y Pentesting Tools",
+            "fecha": "24 Abr 2025 - 19 Dic 2025",
+            "estado": "Completado",
+            "descripcion": "Desarrollo de scripts de automatización para tareas de seguridad, creación de herramientas personalizadas de pentesting y análisis forense de datos."
+        },
+        {
             "titulacion": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
             "institucion": "I.E.S. Leonardo Da Vinci",
             "fecha": "sept. 2023 – dic. 2025",
