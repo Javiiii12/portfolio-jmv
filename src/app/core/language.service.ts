@@ -26,7 +26,16 @@ export class LanguageService {
         'APTO': 'PASSED',
         '> Execute ./code': '> Execute ./code',
         '> View Write-up': '> View Write-up',
-        '© 2026 Javier Martínez Valiente. Todos los derechos reservados.': '© 2026 Javier Martínez Valiente. All rights reserved.'
+        '© 2026 Javier Martínez Valiente. Todos los derechos reservados.': '© 2026 Javier Martínez Valiente. All rights reserved.',
+        '[ SECCIÓN: TEMARIO Y VULNERABILIDADES (AWAE) ]': '[ SECTION: SYLLABUS AND VULNERABILITIES (AWAE) ]',
+        '[ SECCIÓN: MATERIAL DE ESTUDIO Y PREPARACIÓN ]': '[ SECTION: STUDY MATERIAL AND PREPARATION ]',
+        '>_ VEREDICTO:': '>_ VERDICT:',
+        '>_ VERDICT:': '>_ VERDICT:',
+        'Status: VERIFIED': 'Status: VERIFIED',
+        '[ REGRESAR A LA PÁGINA PRINCIPAL ]': '[ RETURN TO MAIN PAGE ]',
+        'Examen de Certificación': 'Certification Exam',
+        '> Solicitando datos de la base central...': '> Requesting data from the central base...',
+        'Error de lectura o credencial no encontrada en el sistema.': 'Read error or credential not found in the system.'
     };
 
     toggleLanguage() {

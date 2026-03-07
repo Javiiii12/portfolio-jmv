@@ -50,11 +50,8 @@ export interface ICertDetailItem {
     description: string;
 }
 
-export interface ICertDetail {
-    id: string;
+export interface ICertDetailLang {
     title: string;
-    credentialId: string;
-    date: string;
     tags: string[];
     challengeText: string;
     preparationText: string;
@@ -66,7 +63,15 @@ export interface ICertDetail {
     reviewBest: string;
     reviewWorst: string;
     verdict: string;
+}
+
+export interface ICertDetail {
+    id: string;
+    credentialId: string;
+    date: string;
     verificationUrl?: string;
+    es: ICertDetailLang;
+    en: ICertDetailLang;
 }
 
 export interface IPortfolioData {
