@@ -40,7 +40,8 @@ export class LanguageService {
         'NEEDLES / POINTS': 'NEEDLES / POINTS',
         'CAMPAIGN STATUS': 'CAMPAIGN STATUS',
         '[ MISSION_LOG: PHASE_01 ]': '[ MISSION_LOG: PHASE_01 ]',
-        '[ MISSION_LOG: PHASE_02 ]': '[ MISSION_LOG: PHASE_02 ]'
+        '[ MISSION_LOG: PHASE_02 ]': '[ MISSION_LOG: PHASE_02 ]',
+        'EVIDENCIA_OPERACIONAL': 'OPERATIONAL_EVIDENCE'
     };
 
     toggleLanguage() {

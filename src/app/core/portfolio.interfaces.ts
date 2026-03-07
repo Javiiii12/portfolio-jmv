@@ -90,6 +90,7 @@ export interface IWriteupDetailLang {
 
 export interface IWriteupDetail {
     id: string;
+    gallery?: string[];
     es: IWriteupDetailLang;
     en: IWriteupDetailLang;
 }
