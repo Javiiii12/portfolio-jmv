@@ -205,18 +205,39 @@
         "OSWP": {
             "id": "oswp",
             "title": "Offensive Security Wireless Professional",
-            "credentialId": "Pending",
+            "credentialId": "Validated",
             "date": "Pending",
             "tags": [
                 "Wireless Pentesting",
-                "Aircrack-ng"
+                "802.11",
+                "Network Auditing"
             ],
-            "challengeText": "Lorem ipsum OSWP challenge",
-            "preparationText": "Lorem ipsum prep OSWP",
-            "examText": "Lorem ipsum exam OSWP",
+            "challengeText": "La certificación OSWP certifica la capacidad técnica para auditar, identificar y explotar vulnerabilidades en redes inalámbricas 802.11. A diferencia de las auditorías tradicionales, requiere interactuar físicamente con el espectro de radiofrecuencia, capturar tráfico en el aire y comprometer protocolos de cifrado corporativos.",
+            "preparationText": "",
+            "syllabusIntro": "La preparación exige un dominio absoluto de la suite Aircrack-ng y herramientas complementarias. Las habilidades consolidadas incluyen:",
+            "syllabusItems": [
+                {
+                    "title": "Análisis y Captura",
+                    "description": "Análisis y captura de paquetes (Handshakes y PMKID)."
+                },
+                {
+                    "title": "Explotación y Cracking",
+                    "description": "Explotación y cracking de protocolos WPA, WPA2 (Personal y Enterprise)."
+                },
+                {
+                    "title": "Ataques de Infraestructura",
+                    "description": "Despliegue de ataques de infraestructura: Rogue Access Points y Evil Twins."
+                },
+                {
+                    "title": "Evasión y Bypass",
+                    "description": "Evasión de controles de acceso (MAC Spoofing) y bypass de portales cautivos."
+                }
+            ],
+            "examText": "El examen práctico es un entorno de laboratorio simulado donde se debe demostrar la capacidad de comprometer diferentes redes inalámbricas configuradas con distintas medidas de seguridad, extrayendo las claves de red y demostrando acceso total bajo presión de tiempo.",
             "reviewBest": "",
             "reviewWorst": "",
-            "verdict": "Pendiente de redactar."
+            "verdict": "Imprescindible para auditorías físicas y Red Team. Proporciona una base sólida sobre cómo las configuraciones inalámbricas deficientes pueden ser el vector de entrada inicial a toda la red interna de una organización.",
+            "verificationUrl": "https://credentials.offsec.com/445412c6-a93b-4f71-9af5-4ec9b3a608de#acc.Y2FI1EOT"
         },
         "eCCPT": {
             "id": "eccpt",
