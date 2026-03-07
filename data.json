@@ -152,7 +152,7 @@
                 "White Box Pentesting",
                 "Code Review"
             ],
-            "challengeText": "La certificación OffSec Web Expert (OSWE) [cite: 76, 77] es una de las pruebas más exigentes de la industria, centrada en la revisión de código fuente y la explotación avanzada de aplicaciones web personalizadas.",
+            "challengeText": "La certificación OffSec Web Expert (OSWE) es una de las pruebas más exigentes de la industria, centrada en la revisión de código fuente y la explotación avanzada de aplicaciones web personalizadas.",
             "preparationText": "Para dominar las vulnerabilidades complejas (Deserialización, Advanced SQLi, Server-Side Template Injection), dediqué un año completo a la suscripción de laboratorios, auditando código fuente real y programando mis propios exploits en Python desde cero, sin depender de herramientas automatizadas.",
             "syllabusIntro": "El enfoque del OSWE es puramente White-Box (caja blanca). No se trata de lanzar herramientas automatizadas, sino de auditar arquitecturas completas. Los principales vectores y tecnologías que dominé durante esta certificación incluyen:",
             "syllabusItems": [
@@ -200,7 +200,7 @@
             "reviewBest": "Profundización real en auditoría de código blanco puro.",
             "reviewWorst": "El laboratorio y la interfaz son anticuados y poco responsivos.",
             "verdict": "Esta experiencia forjó una mentalidad analítica profunda. Ahora no solo busco fallos en la superficie, sino que audito la arquitectura del software, entiendo el flujo de datos inseguro y construyo cadenas de explotación complejas (Exploit Chaining) para vulnerar sistemas de máxima seguridad.",
-            "verifyLink": "https://www.credential.net/"
+            "verificationUrl": "https://credentials.offsec.com/3c5db88d-f560-4cc7-b14d-593154af51ca#acc.UXsc8qn9"
         },
         "OSWP": {
             "id": "oswp",
