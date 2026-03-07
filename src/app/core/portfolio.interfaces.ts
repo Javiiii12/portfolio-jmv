@@ -43,6 +43,20 @@ export interface IProyecto {
     enlace: string;
 }
 
+export interface ICertDetail {
+    id: string;
+    title: string;
+    credentialId: string;
+    date: string;
+    tags: string[];
+    challengeText: string;
+    preparationText: string;
+    examText: string;
+    reviewBest: string;
+    reviewWorst: string;
+    verdict: string;
+}
+
 export interface IPortfolioData {
     perfil: IPerfil;
     habilidades_destacadas: IHabilidadesDestacadas;
@@ -50,4 +64,5 @@ export interface IPortfolioData {
     formacion: IFormacion[];
     experiencia: IExperiencia[];
     proyectos: IProyecto[];
+    certDetails: Record<string, ICertDetail>;
 }

@@ -140,5 +140,91 @@
             "tecnologia": "Python",
             "enlace": "#"
         }
-    ]
+    ],
+    "certDetails": {
+        "OSWE": {
+            "id": "oswe",
+            "title": "Offensive Security Web Expert",
+            "credentialId": "Validated",
+            "date": "May 5, 2025",
+            "tags": [
+                "Advanced Web Exploitation",
+                "White Box Pentesting",
+                "Code Review"
+            ],
+            "challengeText": "La certificación OffSec Web Expert (OSWE) [cite: 76, 77] es una de las pruebas más exigentes de la industria, centrada en la revisión de código fuente y la explotación avanzada de aplicaciones web personalizadas.",
+            "preparationText": "Para dominar las vulnerabilidades complejas (Deserialización, Advanced SQLi, Server-Side Template Injection), dediqué un año completo a la suscripción de laboratorios, auditando código fuente real y programando mis propios exploits en Python desde cero, sin depender de herramientas automatizadas.",
+            "examText": "El entorno de examen requiere identificar vulnerabilidades lógicas y encadenarlas para conseguir ejecución remota de comandos (RCE). Tras una primera iteración de aprendizaje, superé el examen en el segundo intento. El punto de inflexión fue auditar y explotar con éxito la última máquina, logrando el RCE definitivo a tan solo dos horas de finalizar el tiempo reglamentario de 48 horas.",
+            "reviewBest": "Profundización real en auditoría de código blanco puro.",
+            "reviewWorst": "El laboratorio y la interfaz son anticuados y poco responsivos.",
+            "verdict": "Esta experiencia forjó una mentalidad analítica profunda. Ahora no solo busco fallos en la superficie, sino que audito la arquitectura del software, entiendo el flujo de datos inseguro y construyo cadenas de explotación complejas (Exploit Chaining) para vulnerar sistemas de máxima seguridad."
+        },
+        "OSWP": {
+            "id": "oswp",
+            "title": "Offensive Security Wireless Professional",
+            "credentialId": "Pending",
+            "date": "Pending",
+            "tags": [
+                "Wireless Pentesting",
+                "Aircrack-ng"
+            ],
+            "challengeText": "Lorem ipsum OSWP challenge",
+            "preparationText": "Lorem ipsum prep OSWP",
+            "examText": "Lorem ipsum exam OSWP",
+            "reviewBest": "",
+            "reviewWorst": "",
+            "verdict": "Pendiente de redactar."
+        },
+        "eCCPT": {
+            "id": "eccpt",
+            "title": "Certified Professional Pentester",
+            "credentialId": "Pending",
+            "date": "Pending",
+            "tags": [
+                "Network Pivoting",
+                "Active Directory",
+                "Buffer Overflow"
+            ],
+            "challengeText": "Lorem ipsum eCCPT challenge",
+            "preparationText": "Lorem ipsum prep eCCPT",
+            "examText": "Lorem ipsum exam eCCPT",
+            "reviewBest": "",
+            "reviewWorst": "",
+            "verdict": "Pendiente de redactar."
+        },
+        "eWPT": {
+            "id": "ewpt",
+            "title": "Web App Penetration Tester",
+            "credentialId": "Pending",
+            "date": "Pending",
+            "tags": [
+                "OWASP Top 10",
+                "Black Box",
+                "Burp Suite"
+            ],
+            "challengeText": "Lorem ipsum eWPT challenge",
+            "preparationText": "Lorem ipsum prep eWPT",
+            "examText": "Lorem ipsum exam eWPT",
+            "reviewBest": "",
+            "reviewWorst": "",
+            "verdict": "Pendiente de redactar."
+        },
+        "eJPT": {
+            "id": "ejpt",
+            "title": "Junior Penetration Tester",
+            "credentialId": "Pending",
+            "date": "Pending",
+            "tags": [
+                "Routing",
+                "Metasploit",
+                "Basic Pentesting"
+            ],
+            "challengeText": "Lorem ipsum eJPT challenge",
+            "preparationText": "Lorem ipsum prep eJPT",
+            "examText": "Lorem ipsum exam eJPT",
+            "reviewBest": "",
+            "reviewWorst": "",
+            "verdict": "Pendiente de redactar."
+        }
+    }
 }
