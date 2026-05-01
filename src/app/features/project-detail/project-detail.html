@@ -80,10 +80,10 @@
                 </div>
                 } @else if (data.gallery) {
                 <!-- Galería de imágenes estáticas para proyectos no-iframe -->
-                <div class="w-full bg-slate-950 p-6 overflow-y-auto max-h-[800px] custom-scrollbar flex flex-col gap-8">
+                <div class="w-full bg-slate-950 p-4 md:p-10 overflow-y-auto max-h-[800px] custom-scrollbar flex flex-col gap-10 items-center">
                     @for (img of data.gallery; track img) {
-                    <div class="border border-slate-800 rounded overflow-hidden shadow-lg hover:border-cyan-500/50 transition-colors">
-                        <img [src]="img + '?v=2'" [alt]="data.title" class="w-full h-auto object-cover">
+                    <div class="w-full max-w-4xl border border-slate-800 rounded overflow-hidden shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
+                        <img [src]="img + '?v=2'" [alt]="data.title" class="w-full h-auto block">
                     </div>
                     }
                 </div>

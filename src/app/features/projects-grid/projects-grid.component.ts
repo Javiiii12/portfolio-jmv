@@ -23,7 +23,7 @@ export class ProjectsGridComponent {
 
     public filter = signal<string>('Todos');
 
-    public categories = ['Todos', 'Desarrollo', 'Ciberseguridad', 'IA & Research'];
+    public categories = ['Todos', 'Desarrollo', 'Ciberseguridad', 'Bug Bounty', 'IA & Research'];
 
     public filteredProjects = computed(() => {
         const data = this.portfolioService.portfolioData();
