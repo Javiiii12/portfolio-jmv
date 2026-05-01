@@ -1,27 +1,93 @@
-<div class="w-full text-left p-6 min-h-[70vh]">
-    <div class="mb-8 border-b border-slate-800 pb-4">
-        <!-- Botón de retorno -->
-        <a [routerLink]="['/']" fragment="proyectos"
-            class="inline-flex items-center px-4 py-2 border border-slate-700 bg-black/50 hover:bg-slate-800/50 hover:border-cyan-400 hover:text-cyan-400 text-slate-400 font-mono text-sm tracking-widest transition-all mb-8 group cursor-pointer">
-            <span class="mr-2 group-hover:-translate-x-1 transition-transform">
-                < </span> [ REGRESAR A LA PÁGINA PRINCIPAL ]
-        </a>
+<div class="w-full text-left p-4 md:p-8 min-h-[70vh]">
+    <div class="mb-8 border-b border-slate-800 pb-4 flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+            <!-- Botón de retorno -->
+            <a [routerLink]="['/']" fragment="proyectos"
+                class="inline-flex items-center px-4 py-2 border border-slate-700 bg-black/50 hover:bg-slate-800/50 hover:border-cyan-400 hover:text-cyan-400 text-slate-400 font-mono text-sm tracking-widest transition-all mb-8 group cursor-pointer">
+                <span class="mr-2 group-hover:-translate-x-1 transition-transform">
+                    < </span> [ REGRESAR A LA PÁGINA PRINCIPAL ]
+            </a>
 
-        <h1 class="text-3xl md:text-5xl font-bold text-cyan-400 tracking-tight uppercase">
-            > SYSTEM_PROJECT <span class="animate-pulse text-slate-500">_</span>
-        </h1>
+            <h1 class="text-3xl md:text-5xl font-bold text-cyan-400 tracking-tight uppercase">
+                > PLATAFORMA SIMULADOR ASIR <span class="animate-pulse text-slate-500">_</span>
+            </h1>
+        </div>
+        
+        <a href="https://javiiii12.github.io/asir-online-test/" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-6 py-3 border border-emerald-500/50 bg-emerald-900/20 hover:bg-emerald-900/40 hover:border-emerald-400 text-emerald-400 font-mono text-sm tracking-widest transition-all group">
+            [ VISITAR PROYECTO LIVE ]
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+        </a>
     </div>
 
-    <div class="max-w-4xl mx-auto text-slate-300 text-lg leading-relaxed font-mono">
-        <p class="mb-6">> Cargando logs de desarrollo...</p>
-        <p class="mb-6">El proyecto completo, arquitecturas, y desafíos técnicos se detallarán en esta vista segura
-            interconectada con la terminal principal.</p>
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8">
+        <!-- Columna de detalles técnicos -->
+        <div class="lg:w-1/3 flex flex-col gap-6 text-slate-300 font-mono text-sm leading-relaxed">
+            
+            <div class="p-6 border border-slate-800 bg-slate-900/50 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-1 h-full bg-cyan-500 transition-all group-hover:w-2"></div>
+                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">Descripción</h3>
+                <p class="mb-4">
+                    Desarrollo integral de una plataforma web interactiva diseñada para la simulación de exámenes del ciclo formativo ASIR (Administración de Sistemas Informáticos en Red).
+                </p>
+                <p>
+                    El sistema permite a los estudiantes evaluar sus conocimientos técnicos mediante test modulares con corrección en tiempo real, estadísticas de aciertos y explicaciones detalladas.
+                </p>
+            </div>
 
-        <div class="p-4 border border-slate-800 bg-black/30 text-cyan-500/80 mb-6">
-            <code>
-                // TO-DO: Implementar API fetch para ID {{ (id$ | async) }}
-                <br>> connection established.
-            </code>
+            <div class="p-6 border border-slate-800 bg-slate-900/50 relative overflow-hidden group">
+                <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500 transition-all group-hover:w-2"></div>
+                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">Arquitectura Técnica</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <span class="text-emerald-500 mr-2">></span>
+                        <span><strong>Frontend Core:</strong> HTML5 Semántico y JavaScript (Vanilla ES6+).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-emerald-500 mr-2">></span>
+                        <span><strong>UI/UX:</strong> CSS3 moderno con Flexbox/Grid, animaciones fluidas y diseño responsivo 'Glassmorphism'.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-emerald-500 mr-2">></span>
+                        <span><strong>Gestión de Estado:</strong> Implementación personalizada sin frameworks pesados, optimizando la carga del DOM.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-emerald-500 mr-2">></span>
+                        <span><strong>Carga de Datos:</strong> Sistema modular basado en ficheros JSON/JS para facilitar la escalabilidad de las preguntas.</span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!-- Columna de la visualización (Iframe) -->
+        <div class="lg:w-2/3">
+            <div class="border border-slate-700 bg-black rounded-lg overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.1)] relative">
+                <!-- Barra superior simulando navegador -->
+                <div class="bg-slate-900 border-b border-slate-700 px-4 py-2 flex items-center gap-2">
+                    <div class="flex gap-1.5">
+                        <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                    </div>
+                    <div class="ml-4 flex-1 text-center font-mono text-xs text-slate-500 truncate bg-black/30 rounded py-1">
+                        https://javiiii12.github.io/asir-online-test/
+                    </div>
+                </div>
+                
+                <!-- Iframe interactivo del proyecto -->
+                <div class="w-full h-[600px] bg-slate-950 relative">
+                    <iframe 
+                        src="https://javiiii12.github.io/asir-online-test/" 
+                        title="ASIR Online Test Simulator"
+                        class="w-full h-full border-0 absolute top-0 left-0"
+                        sandbox="allow-scripts allow-same-origin"
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
         </div>
     </div>
 </div>
