@@ -45,6 +45,7 @@ export interface IProyecto {
     icono?: string;
     imagen?: string;
     status?: string;
+    comando?: string;
 }
 
 export interface ICertDetailItem {

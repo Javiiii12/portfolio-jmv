@@ -93,7 +93,7 @@
             <div class="mt-auto border-t border-gray-800 pt-4">
                 <a [routerLink]="['/project', project.titulo.toLowerCase().split(' ').join('-')]"
                     class="inline-flex items-center text-sm font-bold text-gray-300 transition-colors hover:text-cyan-400">
-                    > Execute ./code <span class="ml-2 animate-pulse">_</span>
+                    {{ project.comando || '> Execute ./code' }} <span class="ml-2 animate-pulse">_</span>
                 </a>
             </div>
         </article>

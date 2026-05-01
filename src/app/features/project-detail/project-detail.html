@@ -83,7 +83,7 @@
                 <div class="w-full bg-slate-950 p-6 overflow-y-auto max-h-[800px] custom-scrollbar flex flex-col gap-8">
                     @for (img of data.gallery; track img) {
                     <div class="border border-slate-800 rounded overflow-hidden shadow-lg hover:border-cyan-500/50 transition-colors">
-                        <img [src]="img" [alt]="data.title" class="w-full h-auto object-cover">
+                        <img [src]="img + '?v=2'" [alt]="data.title" class="w-full h-auto object-cover">
                     </div>
                     }
                 </div>
