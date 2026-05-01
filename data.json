@@ -513,12 +513,12 @@
                 "<strong>Arquitectura Ligera y Autónoma:</strong> Diseñado en Vanilla JavaScript para maximizar rendimiento y velocidad sin depender de bases de datos o frameworks complejos, estructurado mediante un sistema de ficheros JSON."
             ],
             "gallery": [
-                "images/sescam/menu.png",
                 "images/sescam/home.png",
+                "images/sescam/menu.png",
                 "images/sescam/sources.png",
-                "images/sescam/random.png",
                 "images/sescam/general.png",
-                "images/sescam/especifica.png"
+                "images/sescam/especifica.png",
+                "images/sescam/random.png"
             ]
         }
     }
