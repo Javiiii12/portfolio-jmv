@@ -160,7 +160,7 @@
         {
             "titulo": "Investigador en Programas de Bug Bounty",
             "descripcion": "Participación activa en plataformas de divulgación coordinada como YesWeHack. Auditoría de seguridad continua, identificación de vulnerabilidades (OWASP Top 10, fallos lógicos) y redacción de reportes técnicos (PoCs) en entornos de producción bajo estrictos alcances (scopes).",
-            "categoria": "IA & Research",
+            "categoria": "Bug Bounty",
             "tecnologia": "Bug Bounty / Vulnerability Research",
             "enlace": "#",
             "comando": "> Execute ./view_profile"
