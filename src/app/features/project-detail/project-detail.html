@@ -54,8 +54,10 @@
 
         <!-- Columna de la visualización (Iframe o Imágenes) -->
         <div class="lg:w-2/3">
-            <div class="border border-slate-700 bg-black rounded-lg overflow-hidden shadow-[0_0_20px_rgba(34,211,238,0.1)] relative">
-                <!-- Barra superior simulando navegador -->
+            <div class="border border-slate-700 bg-black rounded-lg overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)] relative">
+                
+                @if (data.isIframe) {
+                <!-- Barra superior simulando navegador (Solo para Iframes) -->
                 <div class="bg-slate-900 border-b border-slate-700 px-4 py-2 flex items-center gap-2">
                     <div class="flex gap-1.5">
                         <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
@@ -63,11 +65,10 @@
                         <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
                     </div>
                     <div class="ml-4 flex-1 text-center font-mono text-xs text-slate-500 truncate bg-black/30 rounded py-1">
-                        {{ data.link || 'localhost:8080/dev' }}
+                        {{ data.link }}
                     </div>
                 </div>
-                
-                @if (data.isIframe) {
+
                 <!-- Iframe interactivo del proyecto -->
                 <div class="w-full h-[600px] bg-slate-950 relative">
                     <iframe 
@@ -79,13 +80,18 @@
                     </iframe>
                 </div>
                 } @else if (data.gallery) {
-                <!-- Galería de imágenes estáticas para proyectos no-iframe -->
-                <div class="w-full bg-slate-950 p-4 md:p-10 overflow-y-auto max-h-[800px] custom-scrollbar flex flex-col gap-10 items-center">
-                    @for (img of data.gallery; track img) {
-                    <div class="w-full max-w-4xl border border-slate-800 rounded overflow-hidden shadow-2xl hover:border-cyan-500/50 transition-all duration-300">
-                        <img [src]="img + '?v=2'" [alt]="data.title" class="w-full h-auto block">
+                <!-- Galería de imágenes estáticas (Estilo Showroom) -->
+                <div class="w-full bg-slate-950 p-6 md:p-8 overflow-y-auto max-h-[850px] custom-scrollbar">
+                    <div class="grid grid-cols-1 gap-8">
+                        @for (img of data.gallery; track img) {
+                        <div class="group relative border border-slate-800 rounded-lg overflow-hidden shadow-xl hover:border-cyan-500/50 transition-all duration-500 bg-slate-900/50">
+                            <img [src]="img + '?v=2'" [alt]="data.title" class="w-full h-auto block transition-transform duration-700 group-hover:scale-[1.02]">
+                            
+                            <!-- Overlay sutil al hacer hover -->
+                            <div class="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                        </div>
+                        }
                     </div>
-                    }
                 </div>
                 }
             </div>
