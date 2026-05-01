@@ -156,6 +156,30 @@
             "icono": "CTF",
             "imagen": "images/echo-badge.png",
             "status": "> Status: Badge Acquired _"
+        },
+        {
+            "titulo": "Investigador en Programas de Bug Bounty",
+            "descripcion": "Participación activa en plataformas de divulgación coordinada como YesWeHack. Auditoría de seguridad continua, identificación de vulnerabilidades (OWASP Top 10, fallos lógicos) y redacción de reportes técnicos (PoCs) en entornos de producción bajo estrictos alcances (scopes).",
+            "categoria": "IA & Research",
+            "tecnologia": "Bug Bounty / Vulnerability Research",
+            "enlace": "#",
+            "comando": "> Execute ./view_profile"
+        },
+        {
+            "titulo": "Desarrollo con IA Generativa",
+            "descripcion": "Implementación de soluciones basadas en Inteligencia Artificial utilizando APIs de modelos de lenguaje de última generación. Automatización de procesos, desarrollo de asistentes virtuales y optimización de flujos de trabajo mediante procesamiento de lenguaje natural (NLP) e integración en aplicaciones web.",
+            "categoria": "IA & Research",
+            "tecnologia": "IA / Integración API",
+            "enlace": "#",
+            "comando": "> Initialize ./ai_core"
+        },
+        {
+            "titulo": "Seguridad en IA & Prompt Engineering",
+            "descripcion": "Diseño avanzado y estructuración de prompts para maximizar la eficiencia y precisión de modelos LLM. Investigación de vulnerabilidades en Inteligencia Artificial (como Prompt Injection o Jailbreaking) y auditoría de respuestas para garantizar un uso seguro y ético de la IA.",
+            "categoria": "IA & Research",
+            "tecnologia": "AI Security / Prompt Engineering",
+            "enlace": "#",
+            "comando": "> Audit ./llm_sandbox"
         }
     ],
     "certDetails": {
