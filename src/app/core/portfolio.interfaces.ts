@@ -18,6 +18,7 @@ export interface ICertificacion {
     nombre: string;
     emisor: string;
     detalles?: string;
+    imagen?: string;
 }
 
 export interface IFormacion {
@@ -42,6 +43,7 @@ export interface IProyecto {
     tecnologia: string;
     enlace: string;
     icono?: string;
+    imagen?: string;
     status?: string;
 }
 

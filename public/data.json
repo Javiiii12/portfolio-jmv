@@ -120,11 +120,11 @@
     ],
     "proyectos": [
         {
-            "titulo": "E-commerce Seguro con Angular",
-            "descripcion": "Plataforma de comercio electrónico con arquitectura backend segura, prevención de inyecciones SQL y autenticación JWT.",
+            "titulo": "Plataforma Simulador de Test ASIR",
+            "descripcion": "Desarrollo de plataforma web interactiva para la simulación de exámenes. Arquitectura diseñada desde cero usando HTML semántico, CSS moderno (interfaz responsiva) y JavaScript Vanilla para la lógica del simulador y carga de datos.",
             "categoria": "Desarrollo",
-            "tecnologia": "Angular",
-            "enlace": "#"
+            "tecnologia": "JavaScript / CSS",
+            "enlace": "https://javiiii12.github.io/asir-online-test/"
         },
         {
             "titulo": "Pentesting de Máquina [Nombre] - HackTheBox",
@@ -147,6 +147,7 @@
             "tecnologia": "OffSec CTF",
             "enlace": "#",
             "icono": "CTF",
+            "imagen": "images/echo-badge.png",
             "status": "> Status: Badge Acquired _"
         }
     ],

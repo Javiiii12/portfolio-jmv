@@ -23,15 +23,15 @@
         <!-- Panel de Estadísticas -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
             <div class="border border-slate-700 bg-slate-800/50 p-4 rounded-lg text-center">
-                <p class="text-slate-400 text-sm">{{ languageService.translateUI('GLOBAL RANK') }}</p>
+                <p class="text-slate-400 text-sm">{{ languageService.translateUI('RANGO GLOBAL') }}</p>
                 <p class="text-2xl font-bold text-cyan-400">{{ data.stats.rank }}</p>
             </div>
             <div class="border border-slate-700 bg-slate-800/50 p-4 rounded-lg text-center">
-                <p class="text-slate-400 text-sm">{{ languageService.translateUI('NEEDLES / POINTS') }}</p>
+                <p class="text-slate-400 text-sm">{{ languageService.translateUI('AGUJAS / PUNTOS') }}</p>
                 <p class="text-2xl font-bold text-emerald-400">{{ data.stats.points }}</p>
             </div>
             <div class="border border-slate-700 bg-slate-800/50 p-4 rounded-lg text-center">
-                <p class="text-slate-400 text-sm">{{ languageService.translateUI('CAMPAIGN STATUS') }}</p>
+                <p class="text-slate-400 text-sm">{{ languageService.translateUI('ESTADO DE LA CAMPAÑA') }}</p>
                 <p class="text-2xl font-bold text-slate-300">{{ data.stats.status }}</p>
             </div>
         </div>
@@ -43,7 +43,8 @@
                     class="absolute -left-3 top-4 w-6 h-6 bg-emerald-900 rounded-full flex items-center justify-center border-2 border-slate-900">
                     <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
                 </div>
-                <h3 class="text-emerald-400 font-bold mb-3 pl-4">{{ languageService.translateUI('[ MISSION_LOG: PHASE_01
+                <h3 class="text-emerald-400 font-bold mb-3 pl-4">{{ languageService.translateUI('[ REGISTRO_MISIÓN:
+                    FASE_01
                     ]') }}</h3>
                 <p class="text-slate-300 pl-4">{{ data.logCompleted }}</p>
             </div>
@@ -54,7 +55,8 @@
                     class="absolute -left-3 top-4 w-6 h-6 bg-amber-900 rounded-full flex items-center justify-center border-2 border-slate-900">
                     <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
                 </div>
-                <h3 class="text-amber-500 font-bold mb-3 pl-4">{{ languageService.translateUI('[ MISSION_LOG: PHASE_02
+                <h3 class="text-amber-500 font-bold mb-3 pl-4">{{ languageService.translateUI('[ REGISTRO_MISIÓN:
+                    FASE_02
                     ]') }}</h3>
                 <p class="text-slate-400 pl-4 italic">{{ data.logIncomplete }}</p>
             </div>

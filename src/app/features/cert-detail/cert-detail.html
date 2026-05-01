@@ -8,7 +8,8 @@
         </a>
 
         <h1 class="text-3xl md:text-5xl font-bold text-cyan-400 tracking-tight uppercase">
-            > ACCREDITATION_LOGS <span class="animate-pulse text-slate-500">_</span>
+            > {{ languageService.translateUI('REGISTROS_ACREDITACIÓN') }} <span
+                class="animate-pulse text-slate-500">_</span>
         </h1>
     </div>
 
@@ -16,7 +17,8 @@
     <!-- 1. Cabecera del Reporte -->
     <div class="border-b border-slate-700 pb-6 mb-8">
         <h1 class="text-4xl font-bold text-emerald-400 mb-2">[ {{ cert.id | uppercase }} ] {{ cert.title }}</h1>
-        <p class="text-slate-400 text-lg">Credential ID: {{ cert.credentialId }} | Achieved: {{ cert.date }}</p>
+        <p class="text-slate-400 text-lg">{{ languageService.translateUI('ID Credencial') }}: {{ cert.credentialId }} |
+            {{ languageService.translateUI('Obtenida') }}: {{ cert.date }}</p>
         <div class="mt-4 flex flex-wrap gap-3">
             @for (tag of cert.tags; track tag; let first = $first) {
             <span class="px-3 py-1 text-sm rounded-md" [class.bg-emerald-900]="first" [class.bg-opacity-30]="first"
@@ -31,11 +33,13 @@
     <!-- 2. Cuerpo de la Experiencia -->
     <div class="space-y-6 text-slate-300 leading-relaxed font-mono">
         @if (cert.challengeText) {
-        <p><span class="text-cyan-400 font-bold">>_ THE_CHALLENGE:</span> {{ cert.challengeText }}</p>
+        <p><span class="text-cyan-400 font-bold">>_ {{ languageService.translateUI('EL_RETO') }}:</span> {{
+            cert.challengeText }}</p>
         }
 
         @if (cert.preparationText) {
-        <p><span class="text-cyan-400 font-bold">>_ PREPARATION_PHASE:</span> {{ cert.preparationText }}</p>
+        <p><span class="text-cyan-400 font-bold">>_ {{ languageService.translateUI('FASE_PREPARACIÓN') }}:</span> {{
+            cert.preparationText }}</p>
         }
 
         @if (cert.examText) {
@@ -47,11 +51,13 @@
         }
 
         @if (cert.reviewBest) {
-        <p><span class="text-green-400 font-bold">>_ HIGHLIGHTS:</span> {{ cert.reviewBest }}</p>
+        <p><span class="text-green-400 font-bold">>_ {{ languageService.translateUI('PUNTOS_FUERTES') }}:</span> {{
+            cert.reviewBest }}</p>
         }
 
         @if (cert.reviewWorst) {
-        <p><span class="text-red-400 font-bold">>_ LOWLIGHTS:</span> {{ cert.reviewWorst }}</p>
+        <p><span class="text-red-400 font-bold">>_ {{ languageService.translateUI('PUNTOS_DÉBILES') }}:</span> {{
+            cert.reviewWorst }}</p>
         }
 
         <!-- Secciones adicionales dinámicas (Temario y Estudio) -->
@@ -107,7 +113,7 @@
         @if (cert.verificationUrl) {
         <a [href]="cert.verificationUrl" target="_blank" rel="noopener noreferrer"
             class="inline-block px-6 py-3 border border-emerald-500 text-emerald-400 font-mono tracking-widest uppercase hover:bg-emerald-500/10 transition-colors">
-            [ VERIFY_CREDENTIAL ]
+            {{ languageService.translateUI('[ VERIFICAR_CREDENCIAL ]') }}
         </a>
         } @else {
         <span

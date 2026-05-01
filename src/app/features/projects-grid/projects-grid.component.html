@@ -3,7 +3,7 @@
     <div class="mb-12 border-l-2 border-cyan-400 pl-6 lg:pl-10">
         <h2
             class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 inline-flex items-center gap-3 typewriter uppercase tracking-widest">
-            [ ACTIVE_OPERATIONS ]
+            {{ languageService.translateUI('[ OPERACIONES_ACTIVAS ]') }}
         </h2>
     </div>
 
@@ -29,8 +29,10 @@
                 class="flex items-center p-4 bg-slate-800/80 rounded-lg border border-slate-700 hover:border-emerald-500 transition-all cursor-pointer group w-full">
                 <!-- Izquierda (Avatar de la máquina) -->
                 <div
-                    class="w-14 h-14 rounded-full bg-slate-900 flex-shrink-0 mr-6 flex items-center justify-center border border-slate-600 group-hover:border-emerald-500 transition-colors shadow-[0_0_10px_rgba(16,185,129,0.2)] group-hover:shadow-[0_0_15px_rgba(16,185,129,0.5)]">
-                    @if (project.icono === 'CTF') {
+                    class="w-14 h-14 rounded-full bg-slate-900 flex-shrink-0 mr-6 flex items-center justify-center border border-slate-600 group-hover:border-emerald-500 transition-colors overflow-hidden shadow-[0_0_10px_rgba(16,185,129,0.2)] group-hover:shadow-[0_0_15px_rgba(16,185,129,0.5)]">
+                    @if (project.imagen) {
+                    <img [src]="project.imagen" [alt]="project.titulo" class="w-full h-full object-cover">
+                    } @else if (project.icono === 'CTF') {
                     <span
                         class="text-sm font-bold text-emerald-500 drop-shadow-[0_0_5px_rgba(34,197,94,0.8)]">CTF</span>
                     } @else if (project.icono) {

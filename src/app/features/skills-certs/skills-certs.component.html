@@ -9,7 +9,7 @@
         <div class="space-y-10 border-l-2 border-slate-800 pl-6 lg:pl-10">
             <h2
                 class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 typewriter inline-block uppercase tracking-widest">
-                [ TACTICAL_SKILLS ]
+                {{ languageService.translateUI('[ HABILIDADES_TÁCTICAS ]') }}
             </h2>
 
             <!-- Sub-sección: Ciberseguridad & Hacking Ético -->
@@ -64,7 +64,7 @@
         <div class="border-l-2 border-slate-800 pl-6 lg:pl-10 lg:border-l-0 lg:border-r-2 lg:pr-10 lg:text-right">
             <h2
                 class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 mb-10 mt-12 lg:mt-0 typewriter inline-block uppercase tracking-widest">
-                [ OFFENSIVE_OPERATIONS ]
+                {{ languageService.translateUI('[ OPERACIONES_OFENSIVAS ]') }}
             </h2>
 
             <!-- Grid Interno de Tarjetas (Cards) -->
@@ -72,6 +72,16 @@
                 @for (cert of data.certificaciones; track cert.id) {
                 <article
                     class="bg-black/50 border border-slate-800 p-6 flex flex-col items-center justify-center text-center hover:border-green-500 transition-all duration-300 relative group overflow-hidden">
+
+                    @if (cert.imagen) {
+                    <img [src]="cert.imagen" [alt]="cert.nombre"
+                        class="w-16 h-16 mb-4 object-contain drop-shadow-[0_0_8px_rgba(34,197,94,0.5)]">
+                    } @else {
+                    <div
+                        class="w-12 h-12 mb-4 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center">
+                        <span class="text-xl">📜</span>
+                    </div>
+                    }
 
                     <!-- ID Certificación -->
                     <h3 class="text-xl font-bold text-green-500 mb-1 tracking-widest">
