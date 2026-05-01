@@ -6,7 +6,7 @@
             <a [routerLink]="['/']" fragment="proyectos"
                 class="inline-flex items-center px-4 py-2 border border-slate-700 bg-black/50 hover:bg-slate-800/50 hover:border-cyan-400 hover:text-cyan-400 text-slate-400 font-mono text-sm tracking-widest transition-all mb-8 group cursor-pointer">
                 <span class="mr-2 group-hover:-translate-x-1 transition-transform">
-                    < </span> [ REGRESAR A LA PÁGINA PRINCIPAL ]
+                    < </span> {{ '[ REGRESAR A LA PÁGINA PRINCIPAL ]' | translate }}
             </a>
 
             <h1 class="text-3xl md:text-5xl font-bold text-cyan-400 tracking-tight uppercase">
@@ -17,7 +17,7 @@
         @if (data.link) {
         <a [href]="data.link" target="_blank" rel="noopener noreferrer"
             class="inline-flex items-center justify-center px-6 py-3 border border-emerald-500/50 bg-emerald-900/20 hover:bg-emerald-900/40 hover:border-emerald-400 text-emerald-400 font-mono text-sm tracking-widest transition-all group">
-            [ VISITAR PROYECTO LIVE ]
+            {{ '[ VISITAR PROYECTO LIVE ]' | translate }}
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
@@ -31,7 +31,7 @@
             
             <div class="p-6 border border-slate-800 bg-slate-900/50 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-1 h-full bg-cyan-500 transition-all group-hover:w-2"></div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">Descripción</h3>
+                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">{{ 'Descripción' | translate }}</h3>
                 @for (p of data.description; track p) {
                     <p class="mb-4">{{ p }}</p>
                 }
@@ -39,7 +39,7 @@
 
             <div class="p-6 border border-slate-800 bg-slate-900/50 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500 transition-all group-hover:w-2"></div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">Arquitectura Técnica</h3>
+                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">{{ 'Arquitectura Técnica' | translate }}</h3>
                 <ul class="space-y-3">
                     @for (item of data.architecture; track item) {
                     <li class="flex items-start">
@@ -101,6 +101,6 @@
 } @else {
 <div class="w-full text-center p-20 min-h-[70vh] flex flex-col items-center justify-center">
     <div class="text-emerald-500 text-4xl mb-6 animate-spin">◒</div>
-    <p class="text-slate-400 font-mono text-lg tracking-widest uppercase">> Estableciendo conexión cifrada con el proyecto...</p>
+    <p class="text-slate-400 font-mono text-lg tracking-widest uppercase">> {{ 'Estableciendo conexión cifrada con el proyecto...' | translate }}</p>
 </div>
 }

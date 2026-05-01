@@ -5,10 +5,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import { PortfolioService } from '../../core/portfolio.service';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { TranslatePipe } from '../../core/translate.pipe';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule, TranslatePipe],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css'
 })

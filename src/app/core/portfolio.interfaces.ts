@@ -37,6 +37,7 @@ export interface IExperiencia {
 }
 
 export interface IProyecto {
+    id?: string;
     titulo: string;
     descripcion: string;
     categoria: string;

@@ -58,6 +58,10 @@ export class LanguageService {
         '[ HABILIDADES_TÁCTICAS ]': '[ TACTICAL_SKILLS ]',
         '[ OPERACIONES_OFENSIVAS ]': '[ OFFENSIVE_OPERATIONS ]',
         '[ OPERACIONES_ACTIVAS ]': '[ ACTIVE_OPERATIONS ]',
+        '[ VISITAR PROYECTO LIVE ]': '[ VISIT LIVE PROJECT ]',
+        'Descripción': 'Description',
+        'Arquitectura Técnica': 'Technical Architecture',
+        'Estableciendo conexión cifrada con el proyecto...': 'Establishing encrypted connection with the project...',
         '[ EXP_PROFESIONAL ]': '[ PROFESSIONAL_EXP ]',
         '[ FORMACIÓN_CENTRAL ]': '[ CORE_EDUCATION ]'
     };
@@ -187,6 +191,39 @@ export class LanguageService {
             }
             return p;
         });
+
+        // Translate Project Details
+        if (translated.projectDetails) {
+            const asir = translated.projectDetails['plataforma-simulador-de-test-asir'];
+            if (asir) {
+                asir.title = 'ASIR TEST SIMULATOR PLATFORM';
+                asir.description = [
+                    "Comprehensive development of an interactive web platform designed for exam simulation of the ASIR (Network Computer Systems Administration) vocational training cycle.",
+                    "The system allows students to evaluate their technical knowledge through modular tests with real-time grading, score statistics, and detailed explanations."
+                ];
+                asir.architecture = [
+                    "<strong>Frontend Core:</strong> Semantic HTML5 and JavaScript (Vanilla ES6+).",
+                    "<strong>UI/UX:</strong> Modern CSS3 with Flexbox/Grid, smooth animations and responsive 'Glassmorphism' design.",
+                    "<strong>State Management:</strong> Custom implementation without heavy frameworks, optimizing DOM loading.",
+                    "<strong>Data Loading:</strong> Modular system based on JSON/JS files to facilitate question scalability."
+                ];
+            }
+
+            const sescam = translated.projectDetails['simulador-ope-sescam'];
+            if (sescam) {
+                sescam.title = 'SESCAM OPE SIMULATOR';
+                sescam.description = [
+                    "Development of an advanced interactive platform designed for comprehensive preparation for the Castilla-La Mancha Health Service (SESCAM) public exams.",
+                    "The simulator is optimized to provide an immersive and highly customizable study experience, allowing candidates to train under real exam conditions and track their progress through a history and detailed analytics system."
+                ];
+                sescam.architecture = [
+                    "<strong>Customizable Random Mode:</strong> Algorithm to generate dynamic tests mixing specific or general topics from different academies, with or without time limit.",
+                    "<strong>Simulation and Timer Mode:</strong> Strict exam environment simulating real conditions with live timing and penalty for failures.",
+                    "<strong>History and Progress:</strong> Persistent local storage system (LocalStorage) to record results, analyze areas for improvement, and review mistakes made in previous attempts.",
+                    "<strong>Lightweight and Autonomous Architecture:</strong> Designed in Vanilla JavaScript to maximize performance and speed without depending on databases or complex frameworks, structured through a JSON file system."
+                ];
+            }
+        }
 
         return translated;
     }

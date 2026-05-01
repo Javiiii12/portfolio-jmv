@@ -120,6 +120,7 @@
     ],
     "proyectos": [
         {
+            "id": "simulador-ope-sescam",
             "titulo": "Simulador OPE SESCAM",
             "descripcion": "Desarrollo de plataforma web interactiva para la preparación de Oposiciones del SESCAM. Incluye corrección en tiempo real, modo aleatorio, cronómetro, simulacros y registro de progreso.",
             "categoria": "Desarrollo",
@@ -127,6 +128,7 @@
             "enlace": "#"
         },
         {
+            "id": "plataforma-simulador-de-test-asir",
             "titulo": "Plataforma Simulador de Test ASIR",
             "descripcion": "Desarrollo de plataforma web interactiva para la simulación de exámenes. Arquitectura diseñada desde cero usando HTML semántico, CSS moderno (interfaz responsiva) y JavaScript Vanilla para la lógica del simulador y carga de datos.",
             "categoria": "Desarrollo",
@@ -134,6 +136,7 @@
             "enlace": "https://javiiii12.github.io/asir-online-test/"
         },
         {
+            "id": "pentesting-de-maquina-hackthebox",
             "titulo": "Pentesting de Máquina [Nombre] - HackTheBox",
             "descripcion": "Explotación de vulnerabilidades web, escalada de privilegios y bypass de filtros en entorno controlado.",
             "categoria": "Ciberseguridad",
@@ -141,6 +144,7 @@
             "enlace": "#"
         },
         {
+            "id": "script-de-automatizacion-en-python-para-analisis-de-puertos",
             "titulo": "Script de automatización en Python para análisis de puertos",
             "descripcion": "Herramienta desarrollada para el análisis rápido de puertos y enumeración de servicios en redes corporativas.",
             "categoria": "Ciberseguridad",
@@ -148,6 +152,7 @@
             "enlace": "#"
         },
         {
+            "id": "echo-response-the-gauntlet",
             "titulo": "Echo Response: The Gauntlet",
             "descripcion": "Participación activa en el evento oficial de OffSec 'Echo Response'. Resolución de retos tácticos de ciberseguridad bajo presión, logrando la insignia oficial y posicionándome en el Top 8% global (Rango 341 de 4267 participantes).",
             "categoria": "Ciberseguridad",
@@ -158,6 +163,7 @@
             "status": "> Status: Badge Acquired _"
         },
         {
+            "id": "investigador-bug-bounty",
             "titulo": "Investigador en Programas de Bug Bounty",
             "descripcion": "Participación activa en plataformas de divulgación coordinada como YesWeHack. Auditoría de seguridad continua, identificación de vulnerabilidades (OWASP Top 10, fallos lógicos) y redacción de reportes técnicos (PoCs) en entornos de producción bajo estrictos alcances (scopes).",
             "categoria": "Bug Bounty",
@@ -166,6 +172,7 @@
             "comando": "> Execute ./view_profile"
         },
         {
+            "id": "desarrollo-ia-generativa",
             "titulo": "Desarrollo con IA Generativa",
             "descripcion": "Implementación de soluciones basadas en Inteligencia Artificial utilizando APIs de modelos de lenguaje de última generación. Automatización de procesos, desarrollo de asistentes virtuales y optimización de flujos de trabajo mediante procesamiento de lenguaje natural (NLP) e integración en aplicaciones web.",
             "categoria": "IA & Research",
@@ -174,6 +181,7 @@
             "comando": "> Initialize ./ai_core"
         },
         {
+            "id": "seguridad-ia-prompt-engineering",
             "titulo": "Seguridad en IA & Prompt Engineering",
             "descripcion": "Diseño avanzado y estructuración de prompts para maximizar la eficiencia y precisión de modelos LLM. Investigación de vulnerabilidades en Inteligencia Artificial (como Prompt Injection o Jailbreaking) y auditoría de respuestas para garantizar un uso seguro y ético de la IA.",
             "categoria": "IA & Research",
