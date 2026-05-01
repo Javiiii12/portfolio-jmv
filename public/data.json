@@ -120,6 +120,13 @@
     ],
     "proyectos": [
         {
+            "titulo": "Simulador OPE SESCAM",
+            "descripcion": "Desarrollo de plataforma web interactiva para la preparación de Oposiciones del SESCAM. Incluye corrección en tiempo real, modo aleatorio, cronómetro, simulacros y registro de progreso.",
+            "categoria": "Desarrollo",
+            "tecnologia": "JavaScript / CSS",
+            "enlace": "#"
+        },
+        {
             "titulo": "Plataforma Simulador de Test ASIR",
             "descripcion": "Desarrollo de plataforma web interactiva para la simulación de exámenes. Arquitectura diseñada desde cero usando HTML semántico, CSS moderno (interfaz responsiva) y JavaScript Vanilla para la lógica del simulador y carga de datos.",
             "categoria": "Desarrollo",
@@ -446,6 +453,46 @@
                 "images/echo-leaderboard.png",
                 "images/echo-progress-1.png",
                 "images/echo-progress-2.png"
+            ]
+        }
+    },
+    "projectDetails": {
+        "plataforma-simulador-de-test-asir": {
+            "id": "plataforma-simulador-de-test-asir",
+            "title": "PLATAFORMA SIMULADOR ASIR",
+            "link": "https://javiiii12.github.io/asir-online-test/",
+            "isIframe": true,
+            "description": [
+                "Desarrollo integral de una plataforma web interactiva diseñada para la simulación de exámenes del ciclo formativo ASIR (Administración de Sistemas Informáticos en Red).",
+                "El sistema permite a los estudiantes evaluar sus conocimientos técnicos mediante test modulares con corrección en tiempo real, estadísticas de aciertos y explicaciones detalladas."
+            ],
+            "architecture": [
+                "<strong>Frontend Core:</strong> HTML5 Semántico y JavaScript (Vanilla ES6+).",
+                "<strong>UI/UX:</strong> CSS3 moderno con Flexbox/Grid, animaciones fluidas y diseño responsivo 'Glassmorphism'.",
+                "<strong>Gestión de Estado:</strong> Implementación personalizada sin frameworks pesados, optimizando la carga del DOM.",
+                "<strong>Carga de Datos:</strong> Sistema modular basado en ficheros JSON/JS para facilitar la escalabilidad de las preguntas."
+            ]
+        },
+        "simulador-ope-sescam": {
+            "id": "simulador-ope-sescam",
+            "title": "SIMULADOR OPE SESCAM",
+            "link": "",
+            "isIframe": false,
+            "description": [
+                "Desarrollo de una plataforma interactiva avanzada diseñada para la preparación integral de oposiciones del Servicio de Salud de Castilla-La Mancha (SESCAM).",
+                "El simulador está optimizado para ofrecer una experiencia de estudio inmersiva y altamente personalizable, permitiendo al opositor entrenar bajo condiciones reales de examen y hacer seguimiento de su progreso a través de un sistema de historial y analíticas detalladas."
+            ],
+            "architecture": [
+                "<strong>Modo Aleatorio Personalizable:</strong> Algoritmo para generar tests dinámicos mezclando temas específicos o generales de distintas academias, con o sin límite de tiempo.",
+                "<strong>Modo Simulacro y Cronómetro:</strong> Entorno estricto de examen que simula condiciones reales con temporización en vivo y penalización por fallos.",
+                "<strong>Historial y Progreso:</strong> Sistema de almacenamiento local persistente (LocalStorage) para registrar resultados, analizar áreas de mejora y revisar fallos cometidos en intentos anteriores.",
+                "<strong>Arquitectura Ligera y Autónoma:</strong> Diseñado en Vanilla JavaScript para maximizar rendimiento y velocidad sin depender de bases de datos o frameworks complejos, estructurado mediante un sistema de ficheros JSON."
+            ],
+            "gallery": [
+                "images/sescam/home.png",
+                "images/sescam/sources.png",
+                "images/sescam/random.png",
+                "images/sescam/general.png"
             ]
         }
     }

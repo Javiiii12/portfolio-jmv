@@ -97,6 +97,16 @@ export interface IWriteupDetail {
     en: IWriteupDetailLang;
 }
 
+export interface IProjectDetail {
+    id: string;
+    title: string;
+    link?: string;
+    isIframe: boolean;
+    description: string[];
+    architecture: string[];
+    gallery?: string[];
+}
+
 export interface IPortfolioData {
     perfil: IPerfil;
     habilidades_destacadas: IHabilidadesDestacadas;
@@ -106,4 +116,5 @@ export interface IPortfolioData {
     proyectos: IProyecto[];
     certDetails: Record<string, ICertDetail>;
     writeupDetails: Record<string, IWriteupDetail>;
+    projectDetails?: Record<string, IProjectDetail>;
 }
