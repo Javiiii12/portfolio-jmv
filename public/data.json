@@ -147,15 +147,6 @@
             "status": "> Status: Badge Acquired _"
         },
         {
-            "id": "script-de-automatizacion-en-python-para-analisis-de-puertos",
-            "titulo": "Script de automatización en Python para análisis de puertos",
-            "descripcion": "Herramienta desarrollada para el análisis rápido de puertos y enumeración de servicios en redes corporativas.",
-            "categoria": "Ciberseguridad",
-            "tecnologia": "Python",
-            "enlace": "#",
-            "status": "> Status: Ready to use _"
-        },
-        {
             "id": "hack-the-box",
             "titulo": "Hack The Box - Perfil Oficial",
             "descripcion": "Mi progresión en la plataforma líder de hacking ético. Especialización en resolución de máquinas de dificultad avanzada y retos de criptografía y web.",
