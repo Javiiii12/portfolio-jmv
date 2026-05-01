@@ -17,6 +17,8 @@ export class LanguageService {
         '[ TODOS ]': '[ ALL ]',
         '[ DESARROLLO ]': '[ DEVELOPMENT ]',
         '[ CIBERSEGURIDAD ]': '[ CYBERSECURITY ]',
+        'IA & Research': 'AI & Research',
+        '[ IA & RESEARCH ]': '[ AI & RESEARCH ]',
         '¿Hablamo$?': 'Shall we talk?',
         'Listo para nuevos descubrimientos y retos arquitectónicos en Ciberseguridad y Full Stack.': 'Ready for new architectural challenges and discoveries in Cybersecurity and Full Stack.',
         'Descargar CV PDF': 'Download CV PDF',
@@ -159,15 +161,34 @@ export class LanguageService {
 
         // Translate Projects
         translated.proyectos = translated.proyectos.map((p: IProyecto) => {
-            if (p.titulo.includes('E-commerce')) {
-                p.titulo = 'Secure E-commerce with Angular';
-                p.descripcion = 'E-commerce platform with secure backend architecture, SQL injection prevention, and JWT authentication.';
-            } else if (p.titulo.includes('Pentesting')) {
+            if (p.titulo.includes('Simulador OPE SESCAM')) {
+                p.titulo = 'SESCAM OPE Simulator';
+                p.descripcion = 'Development of an interactive web platform for SESCAM public exam preparation. Includes real-time grading, random mode, timer, mock exams, and progress tracking.';
+                p.categoria = 'Development';
+            } else if (p.titulo.includes('Simulador de Test ASIR')) {
+                p.titulo = 'ASIR Test Simulator Platform';
+                p.descripcion = 'Development of an interactive web platform for exam simulation. Architecture designed from scratch using semantic HTML, modern CSS (responsive interface) and Vanilla JavaScript for simulator logic and data loading.';
+                p.categoria = 'Development';
+            } else if (p.titulo.includes('Pentesting de Máquina')) {
                 p.titulo = 'Machine Pentesting [Target] - HackTheBox';
                 p.descripcion = 'Web vulnerability exploitation, privilege escalation, and filter bypass in a controlled environment.';
-            } else if (p.titulo.includes('Script de automatización')) {
-                p.titulo = 'Python Automation Script for Port Analysis';
-                p.descripcion = 'Tool developed for rapid port scanning and service enumeration in corporate networks.';
+                p.categoria = 'Cybersecurity';
+            } else if (p.titulo.includes('Echo Response')) {
+                p.descripcion = "Active participation in the official OffSec 'Echo Response' event. Solved tactical cybersecurity challenges under pressure, achieving the official badge and ranking in the global Top 8% (Rank 341 out of 4267 participants).";
+                p.categoria = 'Cybersecurity';
+            } else if (p.titulo.includes('Investigador en Programas de Bug Bounty')) {
+                p.titulo = 'Bug Bounty Program Researcher';
+                p.descripcion = 'Active participation in coordinated disclosure platforms like YesWeHack. Continuous security auditing, vulnerability identification (OWASP Top 10, logic flaws), and technical report writing (PoCs) in production environments under strict scopes.';
+                p.categoria = 'AI & Research';
+            } else if (p.titulo.includes('Desarrollo con IA Generativa')) {
+                p.titulo = 'Generative AI Development';
+                p.descripcion = 'Implementation of Artificial Intelligence solutions using state-of-the-art language model APIs. Process automation, virtual assistant development, and workflow optimization through Natural Language Processing (NLP) and web application integration.';
+                p.categoria = 'AI & Research';
+                p.tecnologia = 'AI / API Integration';
+            } else if (p.titulo.includes('Seguridad en IA & Prompt Engineering')) {
+                p.titulo = 'AI Security & Prompt Engineering';
+                p.descripcion = 'Advanced design and structuring of prompts to maximize the efficiency and accuracy of LLM models. Investigation of Artificial Intelligence vulnerabilities (such as Prompt Injection or Jailbreaking) and response auditing to ensure safe and ethical AI use.';
+                p.categoria = 'AI & Research';
             }
             return p;
         });
