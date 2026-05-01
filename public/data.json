@@ -136,23 +136,7 @@
             "enlace": "https://javiiii12.github.io/asir-online-test/"
         },
         {
-            "id": "pentesting-de-maquina-hackthebox",
-            "titulo": "Pentesting de Máquina [Nombre] - HackTheBox",
-            "descripcion": "Explotación de vulnerabilidades web, escalada de privilegios y bypass de filtros en entorno controlado.",
-            "categoria": "Ciberseguridad",
-            "tecnologia": "Metasploit",
-            "enlace": "#"
-        },
-        {
-            "id": "script-de-automatizacion-en-python-para-analisis-de-puertos",
-            "titulo": "Script de automatización en Python para análisis de puertos",
-            "descripcion": "Herramienta desarrollada para el análisis rápido de puertos y enumeración de servicios en redes corporativas.",
-            "categoria": "Ciberseguridad",
-            "tecnologia": "Python",
-            "enlace": "#"
-        },
-        {
-            "id": "echo-response-the-gauntlet",
+            "id": "echo-response",
             "titulo": "Echo Response: The Gauntlet",
             "descripcion": "Participación activa en el evento oficial de OffSec 'Echo Response'. Resolución de retos tácticos de ciberseguridad bajo presión, logrando la insignia oficial y posicionándome en el Top 8% global (Rango 341 de 4267 participantes).",
             "categoria": "Ciberseguridad",
@@ -161,6 +145,25 @@
             "icono": "CTF",
             "imagen": "images/echo-badge.png",
             "status": "> Status: Badge Acquired _"
+        },
+        {
+            "id": "script-de-automatizacion-en-python-para-analisis-de-puertos",
+            "titulo": "Script de automatización en Python para análisis de puertos",
+            "descripcion": "Herramienta desarrollada para el análisis rápido de puertos y enumeración de servicios en redes corporativas.",
+            "categoria": "Ciberseguridad",
+            "tecnologia": "Python",
+            "enlace": "#",
+            "status": "> Status: Ready to use _"
+        },
+        {
+            "id": "hack-the-box",
+            "titulo": "Hack The Box - Perfil Oficial",
+            "descripcion": "Mi progresión en la plataforma líder de hacking ético. Especialización en resolución de máquinas de dificultad avanzada y retos de criptografía y web.",
+            "categoria": "Ciberseguridad",
+            "tecnologia": "HackTheBox",
+            "enlace": "https://app.hackthebox.com/profile/1381397",
+            "icono": "HTB",
+            "status": "> Rank: Master | Level: 68 _"
         },
         {
             "id": "investigador-bug-bounty",
@@ -486,7 +489,37 @@
                 "images/echo-progress-1.png",
                 "images/echo-progress-2.png"
             ]
-        }
+        },
+        "hack-the-box": {
+            "id": "hack-the-box",
+            "es": {
+                "title": "Hack The Box - Activity Log",
+                "subtitle": "Laboratorios de Hacking Ético y CTFs",
+                "overview": "Registro detallado de actividad en Hack The Box. Enfoque en máquinas Linux/Windows de dificultad media-alta y retos de explotación web (OWASP).",
+                "stats": {
+                    "rank": "MASTER",
+                    "points": "LEVEL 68",
+                    "status": "ACTIVE_RECON"
+                },
+                "logCompleted": "Resolución exitosa de múltiples máquinas y retos. Metodología basada en enumeración minuciosa, explotación de vulnerabilidades conocidas y escalada de privilegios creativa.",
+                "logIncomplete": "Próximos objetivos: Obtención del rango 'Pro Hacker' y resolución de máquinas de categoría 'Insane'.",
+                "verdict": "La consistencia en HTB es fundamental para mantener el 'mindset' de atacante. Cada máquina es un puzzle único que refuerza la perseverancia y la capacidad analítica."
+            },
+            "en": {
+                "title": "Hack The Box - Activity Log",
+                "subtitle": "Ethical Hacking Labs & CTFs",
+                "overview": "Detailed activity log on Hack The Box. Focused on medium-high difficulty Linux/Windows machines and web exploitation challenges (OWASP).",
+                "stats": {
+                    "rank": "MASTER",
+                    "points": "LEVEL 68",
+                    "status": "ACTIVE_RECON"
+                },
+                "logCompleted": "Successful resolution of multiple machines and challenges. Methodology based on thorough enumeration, exploitation of known vulnerabilities, and creative privilege escalation.",
+                "logIncomplete": "Next goals: Achieving 'Pro Hacker' rank and solving 'Insane' category machines.",
+                "verdict": "Consistency on HTB is essential to maintain the attacker mindset. Each machine is a unique puzzle that reinforces perseverance and analytical skills."
+            },
+            "gallery": []
+        },
     },
     "projectDetails": {
         "plataforma-simulador-de-test-asir": {

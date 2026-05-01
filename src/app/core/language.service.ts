@@ -173,9 +173,9 @@ export class LanguageService {
             } else if (p.titulo.includes('Simulador de Test ASIR')) {
                 p.titulo = 'ASIR Test Simulator Platform';
                 p.descripcion = 'Development of an interactive web platform for exam simulation. Architecture designed from scratch using semantic HTML, modern CSS (responsive interface) and Vanilla JavaScript for simulator logic and data loading.';
-            } else if (p.titulo.includes('Pentesting de Máquina')) {
-                p.titulo = 'Machine Pentesting [Target] - HackTheBox';
-                p.descripcion = 'Web vulnerability exploitation, privilege escalation, and filter bypass in a controlled environment.';
+            } else if (p.titulo.includes('Hack The Box')) {
+                p.titulo = 'Hack The Box - Official Profile';
+                p.descripcion = 'My progression on the leading ethical hacking platform. Specializing in advanced machines and cryptography/web challenges.';
             } else if (p.titulo.includes('Echo Response')) {
                 p.descripcion = "Active participation in the official OffSec 'Echo Response' event. Solved tactical cybersecurity challenges under pressure, achieving the official badge and ranking in the global Top 8% (Rank 341 out of 4267 participants).";
             } else if (p.titulo.includes('Investigador en Programas de Bug Bounty')) {
