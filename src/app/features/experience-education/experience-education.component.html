@@ -9,7 +9,7 @@
             <div class="border-l-2 border-slate-800 pl-6 lg:pl-10 mb-8">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 typewriter inline-block uppercase tracking-widest">
-                    {{ languageService.translateUI('[ EXP_PROFESIONAL ]') }}
+                    <span aria-hidden="true">[</span> {{ languageService.translateUI('EXP_PROFESIONAL') }} <span aria-hidden="true">]</span>
                 </h2>
             </div>
 
@@ -21,7 +21,8 @@
                         class="absolute -left-[5px] top-1.5 h-2 w-2 rounded-none bg-black border border-green-500 group-hover:bg-green-500 transition-all"></span>
 
                     <h3 class="text-xl text-green-500 font-bold group-hover:text-cyan-400 transition-colors">
-                        {{ exp.puesto }}
+                        <!-- TODO: Add skeleton loader class here -->
+                        <span>{{ exp.puesto }}</span>
                     </h3>
 
                     <div class="text-sm text-slate-500 font-mono mb-4 uppercase">
@@ -49,7 +50,7 @@
                 class="border-l-2 border-slate-800 pl-6 lg:pl-10 mb-8 lg:border-l-0 lg:border-r-2 lg:pr-10 lg:text-right">
                 <h2
                     class="text-2xl md:text-3xl font-bold text-slate-200 border-b border-slate-800 pb-4 typewriter inline-block uppercase tracking-widest">
-                    {{ languageService.translateUI('[ FORMACIÓN_CENTRAL ]') }}
+                    <span aria-hidden="true">[</span> {{ languageService.translateUI('FORMACIÓN_CENTRAL') }} <span aria-hidden="true">]</span>
                 </h2>
             </div>
 
@@ -61,7 +62,8 @@
                         class="absolute -left-[5px] lg:left-auto lg:-right-[5px] top-1.5 h-2 w-2 rounded-none bg-black border border-cyan-400 group-hover:bg-cyan-400 transition-all"></span>
 
                     <h3 class="text-lg text-cyan-400 font-bold group-hover:text-green-500 transition-colors">
-                        {{ form.titulacion }}
+                        <!-- TODO: Add skeleton loader class here -->
+                        <span>{{ form.titulacion }}</span>
                     </h3>
 
                     <div class="text-sm text-slate-500 font-mono mb-2 uppercase">

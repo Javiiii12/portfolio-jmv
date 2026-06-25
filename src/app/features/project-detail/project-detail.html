@@ -10,7 +10,8 @@
             </a>
 
             <h1 class="text-3xl md:text-5xl font-bold text-cyan-400 tracking-tight uppercase">
-                > {{ data.title }} <span class="animate-pulse text-slate-500">_</span>
+                <!-- TODO: Add skeleton loader class here -->
+                <span aria-hidden="true">> </span><span>{{ data.title }}</span> <span class="animate-pulse text-slate-500" aria-hidden="true">_</span>
             </h1>
         </div>
         
@@ -31,7 +32,7 @@
             
             <div class="p-6 border border-slate-800 bg-slate-900/50 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-1 h-full bg-cyan-500 transition-all group-hover:w-2"></div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">{{ 'Descripción' | translate }}</h3>
+                <h2 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">{{ 'Descripción' | translate }}</h2>
                 @for (p of data.description; track p) {
                     <p class="mb-4">{{ p }}</p>
                 }
@@ -39,7 +40,7 @@
 
             <div class="p-6 border border-slate-800 bg-slate-900/50 relative overflow-hidden group">
                 <div class="absolute top-0 left-0 w-1 h-full bg-emerald-500 transition-all group-hover:w-2"></div>
-                <h3 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">{{ 'Arquitectura Técnica' | translate }}</h3>
+                <h2 class="text-xl font-bold text-slate-100 mb-4 tracking-widest uppercase">{{ 'Arquitectura Técnica' | translate }}</h2>
                 <ul class="space-y-3">
                     @for (item of data.architecture; track item) {
                     <li class="flex items-start">

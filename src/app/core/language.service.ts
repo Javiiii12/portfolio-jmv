@@ -56,14 +56,23 @@ export class LanguageService {
         'PUNTOS_DÉBILES': 'LOWLIGHTS',
         '[ VERIFICAR_CREDENCIAL ]': '[ VERIFY_CREDENTIAL ]',
         '[ HABILIDADES_TÁCTICAS ]': '[ TACTICAL_SKILLS ]',
+        'HABILIDADES_TÁCTICAS': 'TACTICAL_SKILLS',
         '[ OPERACIONES_OFENSIVAS ]': '[ OFFENSIVE_OPERATIONS ]',
+        'OPERACIONES_OFENSIVAS': 'OFFENSIVE_OPERATIONS',
         '[ OPERACIONES_ACTIVAS ]': '[ ACTIVE_OPERATIONS ]',
+        'OPERACIONES_ACTIVAS': 'ACTIVE_OPERATIONS',
         '[ VISITAR PROYECTO LIVE ]': '[ VISIT LIVE PROJECT ]',
         'Descripción': 'Description',
         'Arquitectura Técnica': 'Technical Architecture',
         'Estableciendo conexión cifrada con el proyecto...': 'Establishing encrypted connection with the project...',
         '[ EXP_PROFESIONAL ]': '[ PROFESSIONAL_EXP ]',
-        '[ FORMACIÓN_CENTRAL ]': '[ CORE_EDUCATION ]'
+        'EXP_PROFESIONAL': 'PROFESSIONAL_EXP',
+        '[ FORMACIÓN_CENTRAL ]': '[ CORE_EDUCATION ]',
+        'FORMACIÓN_CENTRAL': 'CORE_EDUCATION',
+        'REGISTRO_MISIÓN: FASE_01': 'MISSION_LOG: PHASE_01',
+        'REGISTRO_MISIÓN: FASE_02': 'MISSION_LOG: PHASE_02',
+        'SECCIÓN: TEMARIO Y VULNERABILIDADES (AWAE)': 'SECTION: SYLLABUS AND VULNERABILITIES (AWAE)',
+        'SECCIÓN: MATERIAL DE ESTUDIO Y PREPARACIÓN': 'SECTION: STUDY MATERIAL AND PREPARATION'
     };
 
     toggleLanguage() {
