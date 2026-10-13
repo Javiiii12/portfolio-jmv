@@ -76,7 +76,12 @@ export class LanguageService {
         'Ciberseguridad y Hacking Ético': 'Cybersecurity & Ethical Hacking',
         'Diseño y Desarrollo Web': 'Web Design & Development',
         'Otros Conocimientos': 'Other Knowledge',
-        '> No se ha encontrado ningún proyecto en este sector.': '> No payload found in this sector.'
+        '> No se ha encontrado ningún proyecto en este sector.': '> No payload found in this sector.',
+        'Inicio': 'Home',
+        'Skills': 'Skills',
+        'Proyectos': 'Projects',
+        'Experiencia': 'Experience',
+        'Contacto': 'Contact'
     };
 
     toggleLanguage() {
