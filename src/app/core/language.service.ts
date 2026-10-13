@@ -141,7 +141,7 @@ export class LanguageService {
                 return form;
             }
 
-            if (form.titulacion.includes('Full Stack Developer')) form.titulacion = 'Full Stack Developer (Backend Specialization)';
+            if (form.titulacion.includes('Full Stack Developer')) form.titulacion = 'Full Stack Developer (DevSecOps Specialization)';
             if (form.titulacion.includes('Técnico Superior')) form.titulacion = 'Higher Technician in Web App Development (DAW)';
             if (form.titulacion.includes('Certificado')) form.titulacion = 'Level 3 Professional Certificate in Computer Security';
             if (form.titulacion.includes('Técnico en Administración')) form.titulacion = 'Tech in Network Computer Systems Administration (ASIR)';
@@ -161,7 +161,7 @@ export class LanguageService {
         // Translate Experience
         translated.experiencia = translated.experiencia.map((exp: IExperiencia) => {
             if (exp.puesto.includes('Auditor')) {
-                exp.puesto = 'Junior Security Auditor';
+                exp.puesto = 'Junior Security Auditor (Internship)';
                 exp.fecha = exp.fecha.replace('Oct', 'Oct').replace('Dic', 'Dec');
                 exp.hitos = [
                     'Technical audit of web and infrastructure vulnerabilities.',
@@ -236,6 +236,69 @@ export class LanguageService {
                     "<strong>Simulation and Timer Mode:</strong> Strict exam environment simulating real conditions with live timing and penalty for failures.",
                     "<strong>History and Progress:</strong> Persistent local storage system (LocalStorage) to record results, analyze areas for improvement, and review mistakes made in previous attempts.",
                     "<strong>Lightweight and Autonomous Architecture:</strong> Designed in Vanilla JavaScript to maximize performance and speed without depending on databases or complex frameworks, structured through a JSON file system."
+                ];
+            }
+
+            const bugBounty = translated.projectDetails['investigador-bug-bounty'];
+            if (bugBounty) {
+                bugBounty.title = 'BUG BOUNTY RESEARCHER';
+                bugBounty.description = [
+                    "Offensive research on coordinated disclosure programs (VDP / Bug Bounty) such as YesWeHack. Continuous auditing of production attack surfaces, always within the scope and policy of each program.",
+                    "Methodology focused on identifying vulnerabilities that automated scanners miss: business logic flaws, IDOR, broken access control and insecure configurations, documenting every finding with clear, reproducible Proofs of Concept (PoC)."
+                ];
+                bugBounty.architecture = [
+                    "<strong>Reconnaissance:</strong> Passive and active enumeration of subdomains, endpoints and technologies tied to the targets.",
+                    "<strong>Vulnerability Analysis:</strong> Manual review aligned with the OWASP Top 10, prioritizing business logic and access control.",
+                    "<strong>Ethical Exploitation:</strong> Controlled validation of findings minimizing impact and respecting each scope's limits.",
+                    "<strong>Technical Reporting:</strong> Writing reports with description, impact, reproduction steps and remediation proposal."
+                ];
+                bugBounty.highlights = [
+                    { title: "Coordinated Disclosure", description: "Responsible reporting of vulnerabilities following the CVD cycle, contributing to the security of real applications." },
+                    { title: "Logic Flaws", description: "Special focus on business logic vulnerabilities and access control flaws that scanners fail to detect." },
+                    { title: "OWASP Methodology", description: "Prioritizing findings based on the OWASP Top 10 and their real criticality on each asset." },
+                    { title: "Documentation", description: "Reproducible Proofs of Concept (PoC) and clear reports aimed at the remediation team." }
+                ];
+            }
+
+            const genAi = translated.projectDetails['desarrollo-ia-generativa'];
+            if (genAi) {
+                genAi.title = 'GENERATIVE AI DEVELOPMENT';
+                genAi.description = [
+                    "Implementation of Generative Artificial Intelligence solutions by integrating state-of-the-art large language model (LLM) APIs into web applications.",
+                    "Process automation, virtual assistant development and workflow optimization powered by Natural Language Processing (NLP), with a strong focus on integration design and user experience."
+                ];
+                genAi.architecture = [
+                    "<strong>API Integration:</strong> Secure connection with LLM model providers and key/token management outside the client.",
+                    "<strong>Prompt Management:</strong> Structuring prompts and context to obtain consistent, controlled responses.",
+                    "<strong>Automation:</strong> Orchestration of repetitive tasks through Python scripting and server-side workflows.",
+                    "<strong>Applied NLP:</strong> Natural language processing to summarize, classify and generate useful content."
+                ];
+                genAi.highlights = [
+                    { title: "LLM Integration", description: "Consumption of state-of-the-art language model APIs within web applications." },
+                    { title: "Automation", description: "Reducing manual tasks through process-oriented pipelines and scripting." },
+                    { title: "Virtual Assistants", description: "Development of conversational assistants applied to specific use cases." },
+                    { title: "NLP", description: "Turning large volumes of text into actionable information through natural language processing." }
+                ];
+            }
+
+            const aiSec = translated.projectDetails['seguridad-ia-prompt-engineering'];
+            if (aiSec) {
+                aiSec.title = 'AI SECURITY & PROMPT ENGINEERING';
+                aiSec.description = [
+                    "Research and application of security in Artificial Intelligence systems, combining advanced prompt design with LLM auditing.",
+                    "Analysis of AI-specific attack vectors such as Prompt Injection, Jailbreaking and information leakage, aiming to build secure, robust AI integrations aligned with ethical use."
+                ];
+                aiSec.architecture = [
+                    "<strong>Prompt Engineering:</strong> Design and structuring of prompts to maximize accuracy, consistency and control of responses.",
+                    "<strong>Model Auditing:</strong> Evaluating behavior against adversarial inputs and restriction-evasion mechanisms.",
+                    "<strong>AI Risk Analysis:</strong> Study of Prompt Injection, Jailbreaking and exposure of sensitive data.",
+                    "<strong>AI Hardening:</strong> Defining safeguards and validating responses for a secure deployment."
+                ];
+                aiSec.highlights = [
+                    { title: "Prompt Injection", description: "Analysis of direct and indirect injections that alter model behavior." },
+                    { title: "Jailbreaking", description: "Testing evasion of guidelines and model safety mechanisms (AI red teaming)." },
+                    { title: "Information Leakage", description: "Evaluating the exposure of sensitive data through model responses." },
+                    { title: "Ethical Use", description: "Auditing responses to ensure safe, responsible and aligned use of AI." }
                 ];
             }
         }

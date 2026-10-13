@@ -99,6 +99,11 @@ export interface IWriteupDetail {
     en: IWriteupDetailLang;
 }
 
+export interface IProjectDetailItem {
+    title: string;
+    description: string;
+}
+
 export interface IProjectDetail {
     id: string;
     title: string;
@@ -106,6 +111,7 @@ export interface IProjectDetail {
     isIframe: boolean;
     description: string[];
     architecture: string[];
+    highlights?: IProjectDetailItem[];
     gallery?: string[];
 }
 

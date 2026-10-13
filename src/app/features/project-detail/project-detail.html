@@ -80,7 +80,7 @@
                         loading="lazy">
                     </iframe>
                 </div>
-                } @else if (data.gallery) {
+                } @else if (data.gallery && data.gallery.length > 0) {
                 <!-- Galería de imágenes estáticas (Estilo Showroom) -->
                 <div class="w-full bg-slate-950 p-6 md:p-8 overflow-y-auto max-h-[850px] custom-scrollbar">
                     <div class="grid grid-cols-1 gap-8">
@@ -90,6 +90,20 @@
                             
                             <!-- Overlay sutil al hacer hover -->
                             <div class="absolute inset-0 bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+                        </div>
+                        }
+                    </div>
+                </div>
+                } @else if (data.highlights) {
+                <!-- Panel de áreas de trabajo (Proyectos de investigación) -->
+                <div class="w-full bg-slate-950 p-6 md:p-8 border-l-2 border-cyan-400/30">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        @for (item of data.highlights; track item.title) {
+                        <div class="p-5 border border-slate-800 bg-slate-900/50 rounded-lg flex flex-col hover:border-cyan-500/50 transition-all duration-300">
+                            <h3 class="text-sm md:text-base font-bold text-cyan-400 tracking-widest uppercase mb-2 flex items-center">
+                                <span class="mr-2">></span>{{ item.title }}
+                            </h3>
+                            <p class="text-sm text-slate-300 leading-relaxed">{{ item.description }}</p>
                         </div>
                         }
                     </div>

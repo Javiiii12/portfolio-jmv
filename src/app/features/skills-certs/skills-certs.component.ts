@@ -1,6 +1,5 @@
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { PortfolioService } from '../../core/portfolio.service';
-import { ICertificacion } from '../../core/portfolio.interfaces';
 
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../../core/language.service';
@@ -14,13 +13,4 @@ import { LanguageService } from '../../core/language.service';
 export class SkillsCertsComponent {
     public portfolioService = inject(PortfolioService);
     public languageService = inject(LanguageService);
-    public selectedCert = signal<ICertificacion | null>(null);
-
-    public openModal(cert: ICertificacion) {
-        this.selectedCert.set(cert);
-    }
-
-    public closeModal() {
-        this.selectedCert.set(null);
-    }
 }
