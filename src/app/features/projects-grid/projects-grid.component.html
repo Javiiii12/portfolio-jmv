@@ -15,7 +15,7 @@
             [class.bg-black]="filter() !== category" [class.text-slate-500]="filter() !== category"
             [class.border-slate-800]="filter() !== category"
             class="px-6 py-2 border hover:border-cyan-400 transition-all duration-300 font-mono text-sm uppercase tracking-widest">
-            [{{ category }}]
+            [{{ languageService.translateUI(category) }}]
         </button>
         }
     </div>
@@ -93,10 +93,16 @@
             </div>
 
             <div class="mt-auto border-t border-gray-800 pt-4">
+                @if (hasDetail(project.id)) {
                 <a [routerLink]="['/project', project.id]"
                     class="inline-flex items-center text-sm font-bold text-gray-300 transition-colors hover:text-cyan-400">
                     {{ project.comando || '> Execute ./code' }} <span class="ml-2 animate-pulse">_</span>
                 </a>
+                } @else {
+                <span class="inline-flex items-center text-sm font-bold text-slate-600 cursor-default">
+                    {{ project.comando || '> Execute ./code' }}
+                </span>
+                }
             </div>
         </article>
         }
@@ -105,7 +111,7 @@
 
     @if (filteredProjects().length === 0) {
     <div class="text-center py-12 text-slate-500 font-mono border border-dashed border-slate-800">
-        > No payload found in this sector.
+        {{ languageService.translateUI('> No se ha encontrado ningún proyecto en este sector.') }}
     </div>
     }
 </section>

@@ -6,7 +6,7 @@ Bienvenido a mi portfolio profesional. Este proyecto refleja mi doble perfil com
 
 Desarrollado con tecnologías de vanguardia enfocadas en el rendimiento absoluto:
 
-- **Angular 20**: Uso de las últimas características del framework.
+- **Angular 21**: Uso de las últimas características del framework.
 - **Signals**: Reactividad moderna sin dependencias externas.
 - **Arquitectura Zoneless**: Ejecución sin `zone.js` para un rendimiento extremo.
 - **Tailwind CSS**: Diseño minimalista, oscuro (Dark Mode), con un toque estético de terminal hacker.

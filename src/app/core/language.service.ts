@@ -72,7 +72,11 @@ export class LanguageService {
         'REGISTRO_MISIÓN: FASE_01': 'MISSION_LOG: PHASE_01',
         'REGISTRO_MISIÓN: FASE_02': 'MISSION_LOG: PHASE_02',
         'SECCIÓN: TEMARIO Y VULNERABILIDADES (AWAE)': 'SECTION: SYLLABUS AND VULNERABILITIES (AWAE)',
-        'SECCIÓN: MATERIAL DE ESTUDIO Y PREPARACIÓN': 'SECTION: STUDY MATERIAL AND PREPARATION'
+        'SECCIÓN: MATERIAL DE ESTUDIO Y PREPARACIÓN': 'SECTION: STUDY MATERIAL AND PREPARATION',
+        'Ciberseguridad y Hacking Ético': 'Cybersecurity & Ethical Hacking',
+        'Diseño y Desarrollo Web': 'Web Design & Development',
+        'Otros Conocimientos': 'Other Knowledge',
+        '> No se ha encontrado ningún proyecto en este sector.': '> No payload found in this sector.'
     };
 
     toggleLanguage() {
@@ -128,6 +132,15 @@ export class LanguageService {
 
         // Translate Education
         translated.formacion = translated.formacion.map((form: IFormacion) => {
+            if (form.titulacion.includes('Certificado en Python')) {
+                form.titulacion = 'Python Certificate by UNIR';
+                form.institucion = 'Automation and Pentesting Tools';
+                form.descripcion = 'Development of automation scripts for security tasks, creation of custom pentesting tools, and forensic data analysis.';
+                form.fecha = 'Apr 24, 2025 - Dec 19, 2025';
+                form.estado = this.dict[form.estado] || form.estado;
+                return form;
+            }
+
             if (form.titulacion.includes('Full Stack Developer')) form.titulacion = 'Full Stack Developer (Backend Specialization)';
             if (form.titulacion.includes('Técnico Superior')) form.titulacion = 'Higher Technician in Web App Development (DAW)';
             if (form.titulacion.includes('Certificado')) form.titulacion = 'Level 3 Professional Certificate in Computer Security';
@@ -141,13 +154,6 @@ export class LanguageService {
             if (form.descripcion.includes('Programación integral web')) form.descripcion = 'Comprehensive web programming. Design of relational databases and development of modern user interfaces and tools.';
             if (form.descripcion.includes('Configuración de sistemas seguros')) form.descripcion = 'Configuration of secure systems, incident management, security auditing, cryptography, and regulatory compliance.';
             if (form.descripcion.includes('Especialización en administración')) form.descripcion = 'Specialization in systems administration, networking, and deployment of secure infrastructures. Second year in progress.';
-
-            if (form.titulacion.includes('Certificado en Python')) {
-                form.titulacion = 'Python Certificate by UNIR';
-                form.institucion = 'Automation and Pentesting Tools';
-                form.descripcion = 'Development of automation scripts for security tasks, creation of custom pentesting tools, and forensic data analysis.';
-                form.fecha = 'Apr 24, 2025 - Dec 19, 2025';
-            }
 
             return form;
         });

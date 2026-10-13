@@ -26,10 +26,12 @@ export class ProjectDetail {
     const data = this.portfolioService.portfolioData();
     const id = this.idSignal();
     if (data && data.projectDetails && id) {
-      return data.projectDetails[id];
+      return data.projectDetails[id] ?? null;
     }
     return null;
   });
+
+  public dataLoaded = computed(() => !!this.portfolioService.portfolioData());
 
   goBack(event: Event) {
     event.preventDefault();

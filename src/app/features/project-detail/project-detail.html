@@ -99,9 +99,25 @@
         </div>
     </div>
 </div>
-} @else {
+} @else if (!dataLoaded()) {
 <div class="w-full text-center p-20 min-h-[70vh] flex flex-col items-center justify-center">
     <div class="text-emerald-500 text-4xl mb-6 animate-spin">◒</div>
     <p class="text-slate-400 font-mono text-lg tracking-widest uppercase">> {{ 'Estableciendo conexión cifrada con el proyecto...' | translate }}</p>
+</div>
+} @else {
+<div class="max-w-4xl mx-auto text-slate-300 text-lg leading-relaxed font-mono p-8 min-h-[70vh]">
+    <p class="mb-6">{{ '> Solicitando datos de la base central...' | translate }}</p>
+    <p class="mb-6">{{ 'Error de lectura o credencial no encontrada en el sistema.' | translate }}</p>
+    <div class="p-4 border border-red-900 bg-black/30 text-red-500/80 mb-6">
+        <code>
+            > System Exception<br>
+            > Status: NO_DATA_FOUND
+        </code>
+    </div>
+    <a [routerLink]="['/']" fragment="proyectos"
+        class="inline-flex items-center px-4 py-2 border border-slate-700 bg-black/50 hover:border-cyan-400 hover:text-cyan-400 text-slate-400 font-mono text-sm tracking-widest transition-all group cursor-pointer">
+        <span class="mr-2 group-hover:-translate-x-1 transition-transform">&lt;</span>
+        {{ '[ REGRESAR A LA PÁGINA PRINCIPAL ]' | translate }}
+    </a>
 </div>
 }

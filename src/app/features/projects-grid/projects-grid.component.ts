@@ -39,4 +39,10 @@ export class ProjectsGridComponent {
     public setFilter(category: string) {
         this.filter.set(category);
     }
+
+    public hasDetail(id?: string): boolean {
+        const data = this.portfolioService.portfolioData();
+        if (!data || !data.projectDetails || !id) return false;
+        return !!data.projectDetails[id];
+    }
 }

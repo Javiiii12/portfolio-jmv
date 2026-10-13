@@ -15,7 +15,7 @@
             <!-- Sub-sección: Ciberseguridad & Hacking Ético -->
             <article>
                 <h3 class="text-xl font-semibold text-cyan-400 mb-4 flex items-center gap-2">
-                    🛡️ Ciberseguridad y Hacking Ético
+                    🛡️ {{ languageService.translateUI('Ciberseguridad y Hacking Ético') }}
                 </h3>
                 <ul class="space-y-2">
                     @for (skill of data.habilidades_destacadas.ciberseguridad_y_hacking; track $index) {
@@ -30,7 +30,7 @@
             <!-- Sub-sección: Diseño y Desarrollo Web -->
             <article>
                 <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center gap-2">
-                    💻 Diseño y Desarrollo Web
+                    💻 {{ languageService.translateUI('Diseño y Desarrollo Web') }}
                 </h3>
                 <ul class="space-y-2">
                     @for (skill of data.habilidades_destacadas.diseno_y_desarrollo_web; track $index) {
@@ -45,7 +45,7 @@
             <!-- Sub-sección: Otros Conocimientos -->
             <article>
                 <h3 class="text-xl font-semibold text-purple-400 mb-4 flex items-center gap-2">
-                    ⚙️ Otros Conocimientos
+                    ⚙️ {{ languageService.translateUI('Otros Conocimientos') }}
                 </h3>
                 <ul class="space-y-2">
                     @for (skill of data.habilidades_destacadas.otros_conocimientos; track $index) {

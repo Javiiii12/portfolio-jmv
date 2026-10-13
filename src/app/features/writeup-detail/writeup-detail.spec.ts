@@ -1,6 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { signal } from '@angular/core';
+import { ActivatedRoute, convertToParamMap, provideRouter } from '@angular/router';
+import { of } from 'rxjs';
 
 import { WriteupDetail } from './writeup-detail';
+import { PortfolioService } from '../../core/portfolio.service';
 
 describe('WriteupDetail', () => {
   let component: WriteupDetail;
@@ -9,6 +13,11 @@ describe('WriteupDetail', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [WriteupDetail],
+      providers: [
+        provideRouter([]),
+        { provide: ActivatedRoute, useValue: { paramMap: of(convertToParamMap({ id: 'echo-response' })) } },
+        { provide: PortfolioService, useValue: { portfolioData: signal(undefined) } },
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(WriteupDetail);
