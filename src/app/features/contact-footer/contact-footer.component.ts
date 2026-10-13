@@ -10,4 +10,8 @@ import { TranslatePipe } from '../../core/translate.pipe';
 export class ContactFooterComponent {
     public email = 'Javier_martinez92@hotmail.com';
     public phone = '678 03 59 93';
+
+    public get phoneHref(): string {
+        return 'tel:' + this.phone.replace(/\s/g, '');
+    }
 }

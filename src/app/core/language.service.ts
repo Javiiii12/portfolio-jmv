@@ -94,7 +94,7 @@ export class LanguageService {
         // Translate Profile
         translated.perfil.titular = 'Cybersecurity Specialist & Full Stack Developer';
         translated.perfil.ubicacion = 'Albacete, Spain';
-        translated.perfil.bio = 'Cybersecurity professional with a solid foundation in Full Stack development. Specialized in vulnerability analysis, network auditing, and secure process automation. Proven ability to identify risks and design resilient architectures. Passionate about ethical hacking and continuous improvement in defensive and offensive environments.\n\nAt this stage, I have specialized in analyzing and mitigating web vulnerabilities, while acquiring knowledge in creating intuitive, responsive, and optimized interfaces for both users and search engines. My experience on platforms like Hack The Box and PortSwigger labs has allowed me to evolve and perfect my skills, adapting to current industry challenges.\n\nMy passion and dedication for cybersecurity, combined with my growing experience in web development, drive me to continue learning and contributing to the creation of secure, innovative, and efficient digital environments.';
+        translated.perfil.bio = 'Cybersecurity professional focused on ethical hacking, backed by recognized certifications such as eJPT, eWPT, eCCPT, OSWP and OSWE. I have completed the Higher Technician in Web Application Development (DAW) program and I am currently in the second year of Network Computer Systems Administration (ASIR), which allows me to comprehensively combine my cybersecurity knowledge with best practices in the design, development and administration of systems and web applications.\n\nAt this stage, I have specialized in analyzing and mitigating web vulnerabilities, while acquiring knowledge in creating intuitive, responsive, and optimized interfaces for both users and search engines. My experience on platforms like Hack The Box and PortSwigger labs has allowed me to evolve and perfect my skills, adapting to current industry challenges.\n\nMy passion and dedication for cybersecurity, combined with my growing experience in web development, drive me to continue learning and contributing to the creation of secure, innovative, and efficient digital environments.';
 
         // Translate Skills
         translated.habilidades_destacadas.ciberseguridad_y_hacking = [
@@ -133,14 +133,14 @@ export class LanguageService {
             if (form.titulacion.includes('Certificado')) form.titulacion = 'Level 3 Professional Certificate in Computer Security';
             if (form.titulacion.includes('Técnico en Administración')) form.titulacion = 'Tech in Network Computer Systems Administration (ASIR)';
 
-            form.fecha = form.fecha.replace('abr.', 'Apr.').replace('dic.', 'Dec.').replace('sept.', 'Sept.').replace('feb.', 'Feb.').replace('oct.', 'Oct.');
+            form.fecha = form.fecha.replace('abr.', 'Apr.').replace('dic.', 'Dec.').replace('sept.', 'Sept.').replace('feb.', 'Feb.').replace('oct.', 'Oct.').replace('jun.', 'Jun.');
 
             form.estado = this.dict[form.estado] || form.estado;
 
             if (form.descripcion.includes('Máster Full Stack Developer')) form.descripcion = 'Master Full Stack Developer. Full Stack architecture, frontend development (Angular), logic and scripting (Python, JS), and database management.';
             if (form.descripcion.includes('Programación integral web')) form.descripcion = 'Comprehensive web programming. Design of relational databases and development of modern user interfaces and tools.';
             if (form.descripcion.includes('Configuración de sistemas seguros')) form.descripcion = 'Configuration of secure systems, incident management, security auditing, cryptography, and regulatory compliance.';
-            if (form.descripcion.includes('Especialización en administración')) form.descripcion = 'Specialization in systems administration, networking, and deployment of secure infrastructures.';
+            if (form.descripcion.includes('Especialización en administración')) form.descripcion = 'Specialization in systems administration, networking, and deployment of secure infrastructures. Second year in progress.';
 
             if (form.titulacion.includes('Certificado en Python')) {
                 form.titulacion = 'Python Certificate by UNIR';
