@@ -61,7 +61,7 @@
     ],
     "formacion": [
         {
-            "titulacion": "Full Stack Developer (Especialización Backend)",
+            "titulacion": "Full Stack Developer (Especialización DevSecOps)",
             "institucion": "UNIR - Universidad Internacional de La Rioja",
             "fecha": "abr. 2025 – dic. 2025",
             "estado": "Completado",
@@ -98,7 +98,7 @@
     ],
     "experiencia": [
         {
-            "puesto": "Auditor de Seguridad Junior",
+            "puesto": "Auditor de Seguridad Junior (Prácticas)",
             "empresa": "Hardlink",
             "fecha": "1 Oct 2025 - 15 Dic 2025",
             "hitos": [
@@ -551,6 +551,108 @@
                 "images/sescam/general.png",
                 "images/sescam/especifica.png",
                 "images/sescam/random.png"
+            ]
+        },
+        "investigador-bug-bounty": {
+            "id": "investigador-bug-bounty",
+            "title": "BUG BOUNTY RESEARCHER",
+            "link": "",
+            "isIframe": false,
+            "description": [
+                "Investigación ofensiva en programas de divulgación coordinada (VDP / Bug Bounty) sobre plataformas como YesWeHack. Auditoría continua de superficies de ataque en producción, siempre dentro de los alcances (scopes) y políticas de cada programa.",
+                "Enfoque metodológico orientado a la identificación de vulnerabilidades que escapan a los escáneres automáticos: fallos lógicos de negocio, IDOR, control de acceso roto y configuraciones inseguras, documentando cada hallazgo con Pruebas de Concepto (PoC) claras y reproducibles."
+            ],
+            "architecture": [
+                "<strong>Reconocimiento:</strong> Enumeración pasiva y activa de subdominios, endpoints y tecnologías asociadas a los objetivos.",
+                "<strong>Análisis de Vulnerabilidades:</strong> Revisión manual alineada con el OWASP Top 10, priorizando lógica de negocio y control de acceso.",
+                "<strong>Explotación Ética:</strong> Validación controlada de hallazgos minimizando el impacto y respetando los límites de cada scope.",
+                "<strong>Reporte Técnico:</strong> Redacción de informes con descripción, impacto, pasos de reproducción y propuesta de remediación."
+            ],
+            "highlights": [
+                {
+                    "title": "Divulgación Coordinada",
+                    "description": "Reporte responsable de vulnerabilidades siguiendo el ciclo CVD, contribuyendo a la seguridad de aplicaciones reales."
+                },
+                {
+                    "title": "Fallos Lógicos",
+                    "description": "Especial atención a vulnerabilidades de lógica de negocio y fallos de control de acceso que los scanners no detectan."
+                },
+                {
+                    "title": "Metodología OWASP",
+                    "description": "Priorización de hallazgos según el OWASP Top 10 y su criticidad real sobre cada activo."
+                },
+                {
+                    "title": "Documentación",
+                    "description": "Pruebas de Concepto (PoC) reproducibles y reportes claros orientados al equipo de remediación."
+                }
+            ]
+        },
+        "desarrollo-ia-generativa": {
+            "id": "desarrollo-ia-generativa",
+            "title": "GENERATIVE AI DEVELOPMENT",
+            "link": "",
+            "isIframe": false,
+            "description": [
+                "Implementación de soluciones basadas en Inteligencia Artificial Generativa mediante la integración de APIs de modelos de lenguaje (LLM) de última generación dentro de aplicaciones web.",
+                "Automatización de procesos, construcción de asistentes virtuales y optimización de flujos de trabajo apoyados en Procesamiento de Lenguaje Natural (NLP), cuidando el diseño de la integración y la experiencia de usuario."
+            ],
+            "architecture": [
+                "<strong>Integración de APIs:</strong> Conexión segura con proveedores de modelos LLM y gestión de claves/tokens fuera del cliente.",
+                "<strong>Gestión de Prompts:</strong> Estructuración de prompts y contexto para obtener respuestas consistentes y controladas.",
+                "<strong>Automatización:</strong> Orquestación de tareas repetitivas mediante scripting en Python y flujos del lado servidor.",
+                "<strong>NLP Aplicado:</strong> Procesamiento de lenguaje natural para resumir, clasificar y generar contenido útil."
+            ],
+            "highlights": [
+                {
+                    "title": "Integración LLM",
+                    "description": "Consumo de APIs de modelos de lenguaje de última generación dentro de aplicaciones web."
+                },
+                {
+                    "title": "Automatización",
+                    "description": "Reducción de tareas manuales mediante pipelines y scripting orientado a procesos."
+                },
+                {
+                    "title": "Asistentes Virtuales",
+                    "description": "Desarrollo de asistentes conversacionales aplicados a casos de uso concretos."
+                },
+                {
+                    "title": "NLP",
+                    "description": "Transformación de grandes volúmenes de texto en información accionable mediante procesamiento de lenguaje natural."
+                }
+            ]
+        },
+        "seguridad-ia-prompt-engineering": {
+            "id": "seguridad-ia-prompt-engineering",
+            "title": "AI SECURITY & PROMPT ENGINEERING",
+            "link": "",
+            "isIframe": false,
+            "description": [
+                "Investigación y aplicación de seguridad en sistemas de Inteligencia Artificial, combinando el diseño avanzado de prompts con la auditoría de modelos LLM.",
+                "Análisis de vectores de ataque específicos de IA, como Prompt Injection, Jailbreaking y fuga de información, con el objetivo de construir integraciones de IA seguras, robustas y alineadas con un uso ético."
+            ],
+            "architecture": [
+                "<strong>Prompt Engineering:</strong> Diseño y estructuración de prompts para maximizar precisión, consistencia y control de las respuestas.",
+                "<strong>Auditoría de Modelos:</strong> Evaluación del comportamiento frente a entradas adversarias y mecanismos de evasión de restricciones.",
+                "<strong>Análisis de Riesgos IA:</strong> Estudio de Prompt Injection, Jailbreaking y exposición de datos sensibles.",
+                "<strong>Hardening de IA:</strong> Definición de salvaguardas y validación de respuestas para un despliegue seguro."
+            ],
+            "highlights": [
+                {
+                    "title": "Prompt Injection",
+                    "description": "Análisis de inyecciones directas e indirectas que alteran el comportamiento de los modelos."
+                },
+                {
+                    "title": "Jailbreaking",
+                    "description": "Pruebas de evasión de directrices y mecanismos de seguridad del modelo (red teaming de IA)."
+                },
+                {
+                    "title": "Fuga de Información",
+                    "description": "Evaluación de la exposición de datos sensibles a través de las respuestas del modelo."
+                },
+                {
+                    "title": "Uso Ético",
+                    "description": "Auditoría de respuestas para garantizar un uso seguro, responsable y alineado de la IA."
+                }
             ]
         }
     }
