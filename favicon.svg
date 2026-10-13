@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Logo MV - Javier Martínez Valiente">
+  <defs>
+    <linearGradient id="mvGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#4ade80"/>
+    </linearGradient>
+    <filter id="mvGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0.9" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="#020617"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="none" stroke="url(#mvGrad)" stroke-width="3"/>
+  <path d="M32 5 L55 18.5 L55 45.5 L32 59 L9 45.5 L9 18.5 Z"
+        fill="none" stroke="url(#mvGrad)" stroke-width="1" opacity="0.3"/>
+  <g fill="none" stroke="url(#mvGrad)" stroke-width="5.5"
+     stroke-linecap="round" stroke-linejoin="round" filter="url(#mvGlow)">
+    <path d="M10 44 L10 20 L19.5 32.5 L29 20 L29 44"/>
+    <path d="M35 20 L44.5 44 L54 20"/>
+  </g>
+</svg>
